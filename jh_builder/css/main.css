@@ -28,7 +28,15 @@
 
 /* 공통부분 */
 
-/* 색깔 # 1A53A4 #434343 */
+/* 
+
+색깔 # 
+
+파란색 1A53A4 
+
+흑색 #434343 
+
+*/
 
 * {}
 
@@ -52,18 +60,22 @@
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: #434343;
+}
+
 /* 헤더 시작 */
 
 header {
-  height: 135px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-header .header_nav {
-}
+header .header_nav {}
 
 header .header_nav ul {
   position: absolute;
@@ -74,7 +86,7 @@ header .header_nav ul li {
   display: inline-block;
   margin-left: 60px;
   position: relative;
-  
+
 }
 
 header .header_nav ul li:not(:last-child):after {
@@ -86,7 +98,7 @@ header .header_nav ul li:not(:last-child):after {
   background-color: gray;
   left: 87px;
   top: 1px;
-  
+
 }
 
 header .header_nav ul a {
@@ -94,3 +106,106 @@ header .header_nav ul a {
   color: #434343;
 }
 
+/* 헤더 끝 */
+
+
+/* 네비 시작 */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #1A53A4;
+  position: relative;
+}
+
+nav ul {}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 118px;
+  position: relative;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+
+nav ul li a {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 18px;
+  color: white;
+}
+
+ nav ul li:not(:last-child):after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 16px;
+  background-color: white;
+  left: 130px;
+  top: 1px;
+}
+
+.nav_search {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  right: 40px;
+}
+
+.nav_search img {
+  margin-left: 20px;
+}
+
+
+nav input {
+  width: 240px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+
+
+/* 네비 끝 */
+
+/* 메인 시작 */
+
+.main {
+  position: relative;
+}
+
+.main .gline {
+  position: absolute;
+  bottom:-29px;
+}
+
+/* 메인 비디오 자리 */
+
+.main .video {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  width: 750px;
+  justify-content: space-between;
+}
+
+.main .video .video_left {
+  width: 350px;
+  height: 200px;
+  background-color: tomato;
+
+}
+
+.main .video .video_right {
+  width: 350px;
+  height: 200px;
+  background-color: red;
+
+}
+
+
+/* 메인 끝 */
