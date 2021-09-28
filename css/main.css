@@ -1,6 +1,19 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'SBAggroB';
+}
+
 .inner {
   width: 1000px;
   margin: 0 auto;
+  font-family: 'SBAggroB';
+
 }
 
 .contents {
