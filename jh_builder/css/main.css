@@ -24,6 +24,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 폰트 종료 */
 
 /* 공통부분 */
@@ -40,6 +47,28 @@
 
 * {}
 
+.title_b {
+  text-align: center;
+  display: block;
+  margin-top: 100px;
+  font-family: 'S-CoreDream-9Black';
+  font-size: 60px;
+  color: #1A53A4;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 60px;
+}
+
+.title_sub {
+  font-size: 18px;
+  font-family: 'S-CoreDream-6Bold';
+  color: #81797A;
+  margin-top: 40px;
+}
+
 .inner {
   font-family: 'S-CoreDream-5Medium';
   font-size: 18px;
@@ -53,12 +82,6 @@
   margin: 0 auto;
 }
 
-.gline {
-  width: 100%;
-  height: 30px;
-  background-color: #1A53A4;
-  position: relative;
-}
 
 a {
   text-decoration: none;
@@ -139,7 +162,7 @@ nav ul li a {
   color: white;
 }
 
- nav ul li:not(:last-child):after {
+nav ul li:not(:last-child):after {
   position: absolute;
   content: "";
   display: block;
@@ -178,18 +201,23 @@ nav input {
   position: relative;
 }
 
-.main .gline {
+.main .btn {
   position: absolute;
-  bottom:-29px;
+  left: calc(50% - 148px);
+  bottom: 76.5px;
 }
+
+
+.gline {}
 
 /* 메인 비디오 자리 */
 
 .main .video {
   position: absolute;
-  left: 50%;
+  left: calc(50% - 390px);
+  bottom: 294px;
   display: flex;
-  width: 750px;
+  width: 780px;
   justify-content: space-between;
 }
 
@@ -197,15 +225,116 @@ nav input {
   width: 350px;
   height: 200px;
   background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.main .video .video_left .video_left_box {
+  font-size: 32px;
 }
 
 .main .video .video_right {
   width: 350px;
   height: 200px;
   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .video .video_right .video_right_box {
+  font-size: 32px;
 
 }
 
 
 /* 메인 끝 */
+/* art1 시작 */
+
+.art1 {
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.art1 img {
+  margin-top: 70px;
+  padding-bottom: 120px;
+}
+
+/* art1 끝 */
+
+/* art2 시작 */
+
+.art2 {
+  background-color: #F8F8F8;
+  height: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.art2 .container {
+  display: flex;
+}
+
+/* art2박스 1 */
+
+.art2_box1,
+.art2_box2,
+.art2_box3 {
+  position: relative;
+}
+
+.art2_box1 .art2_box1_group ,
+.art2_box2 .art2_box2_group ,
+.art2_box3 .art2_box3_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 38px;
+  left: 22px;
+
+}
+
+.art2_box1 .art2_box1_group ul {}
+
+.art2_box1 .art2_box1_group ul li, 
+.art2_box2 .art2_box2_group ul li, 
+.art2_box3 .art2_box3_group ul li 
+{
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.art2_box1 .art2_box1_group ul li:last-child ,
+.art2_box2 .art2_box2_group ul li:last-child ,
+.art2_box3 .art2_box3_group ul li:last-child  {
+  margin-bottom: 20px;
+
+}
+
+
+.btn_blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 42px;
+  background-color: #1B54A5;
+}
+
+.btn_blue {
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* art2 끝 */
