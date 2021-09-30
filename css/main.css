@@ -23,7 +23,7 @@
 .contents {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   position: relative;
 }
@@ -66,3 +66,8 @@ a {
 }
 
 .well_kids_link .logo {}
+
+.kind_coffee_link .logo {
+  margin-left: 95px;
+
+}
