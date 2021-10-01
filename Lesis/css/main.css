@@ -38,11 +38,12 @@
   font-size: 20px;
 
 }
+
+* {
+}
 /* 가로형 텍스트 그룹 */
 
-.text_g1 {
-  
-}
+.text_g1 {}
 
 .text_g1 li {
   display: inline-block;
@@ -61,21 +62,23 @@
 
 /* 세로형 텍스트 그룹 시작 */
 
-.text_g2 {
-}
+.text_g2 {}
 
-.text_g2 ul {
-}
+.text_g2 ul {}
+
 .text_g2 li:nth-child(1) {
   margin-bottom: 20px;
   font-weight: bold;
 }
+
 .text_g2 li:nth-child(2) {
   margin-bottom: 10px;
 }
+
 .text_g2 li:nth-child(3) {
   margin-bottom: 20px;
 }
+
 .text_g2 li a {
   color: #C09A98;
   text-decoration: underline;
@@ -83,6 +86,62 @@
 
 /* 세로형 텍스트 그룹 끝 */
 
+/* 세로형 텍스트 오른쪽 기준 시작 */
+
+
+.text_g3 {
+  text-align: right;
+}
+
+.text_g3 ul {}
+
+.text_g3 li:nth-child(1) {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.text_g3 li:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.text_g3 li:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.text_g3 li a {
+  color: #C09A98;
+  text-decoration: underline;
+}
+
+
+/* 세로형 텍스트 오른쪽 기준 끝 */
+
+/* 2줄짜리 세로형 왼쪽 기준 시작 */
+
+.text_g4 {
+  text-align: left;
+}
+
+.text_g4 ul {}
+
+.text_g4 li:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.text_g4 li:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.text_g4 li:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.text_g4 li a {
+  color: #C09A98;
+  text-decoration: underline;
+}
+
+/* 2줄짜리 세로형 왼쪽 기준 끝 */
 
 
 /* 메인 시작 */
@@ -201,9 +260,9 @@ a {
 }
 
 .art1 .text_g1 {
-position: absolute;
-top: 160px;
-right: 550px;
+  position: absolute;
+  top: 160px;
+  right: 550px;
 }
 
 .art1 .text_g2 {
@@ -214,3 +273,144 @@ right: 550px;
 
 
 /* art1 끝 */
+
+/* art2 시작 */
+
+
+.art2 {
+  position: relative;
+}
+
+
+.art2 .text_g1 {
+  position: absolute;
+  top: 154px;
+  left: 520px;
+}
+
+.art2 .text_g3 {
+  position: absolute;
+  left: 458px;
+  bottom: 60px;
+}
+
+/* art2 끝 */
+
+.divide2 {
+  margin-top: -2px;
+}
+
+
+/* art3 시작 */
+
+.art3 {
+  position: relative;
+  margin-top: -2px;
+  height: 1425px;
+  background-image: url(../images/art3_image.png);
+}
+
+.art3 .ast1 {
+  position: absolute;
+  left: 388px;
+  bottom: 489px;
+  z-index: 1;
+}
+
+.art3 .ast2 {
+  position: absolute;
+  left: 686px;
+  bottom: 419px;
+  z-index: 1;
+}
+
+.art3 .ast3 {
+  position: absolute;
+  right: 684px;
+  bottom: 359px;
+  z-index: 1;
+}
+
+.art3 .ast4 {
+  position: absolute;
+  right: 402px;
+  bottom: 299px;
+  z-index: 1;
+}
+
+.art3 .text_g3 {
+  position: absolute;
+  right: 454px;
+  bottom: 140px;
+}
+
+.art3 .text_g4 {
+  line-height: 65px;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 140px;
+  left: 438px;
+}
+
+/* art3 끝 */
+
+/* art4 시작 */
+
+.art4 {
+  z-index: 2;
+
+  position: relative;
+  background: url(../images/art4_image.png) center no-repeat;
+  height: 1250px;
+
+}
+
+.art4 .text_g4 {
+  position: absolute;
+  top: 365px;
+  right: 550px;
+}
+
+
+
+/* art4 끝 */
+
+
+/* footer 시작 */
+
+
+.footer {
+  z-index: 1;
+  position: relative;
+  background-color: #A36D6A;
+  height: 900px;
+  margin-top: -200px;
+}
+
+.footer img:nth-child(1) {
+  position: absolute;
+  right: 464px;
+  top: 252px;
+}
+
+.footer img:nth-child(2) {
+  position: absolute;
+  right: 464px;
+  bottom: 54px;
+}
+
+.footer .text_box_group {
+  top: 269px;
+  left: 400px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .box1 {
+  position: ;
+}
+
+
+/* footer 끝 */
