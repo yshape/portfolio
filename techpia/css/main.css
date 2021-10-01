@@ -375,6 +375,7 @@ nav ul a li:hover {
 
 /* art4 box1끝   */
 
+/* art4 box2 시작 */
 .art4_box2 {
   position: relative;
 }
@@ -392,8 +393,14 @@ nav ul a li:hover {
   position: absolute;
   right: 260px;
   top: 180px;
-
+  visibility: hidden;
 }
+
+.art4_box2 .l_p:hover .art4_box2 .l_text {
+  visibility: visible;
+  
+}
+
 
 .art4_box2 .l_arrow {
   position: absolute;
