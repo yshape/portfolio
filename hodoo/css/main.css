@@ -1,0 +1,16 @@
+/* 공통부분 */
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+
+}
+
+.wrap { 
+  width: 1900px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+}
