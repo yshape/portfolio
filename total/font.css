@@ -59,3 +59,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+
+
+
+/* 나눔 고딕  */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}

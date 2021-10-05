@@ -1,16 +1,365 @@
+/* 폰트 부분 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 폰트 부분 끝 */
+
+/* 자주 쓰는 컬러 */
+
+
+/* 흑회색 #292929 */
+/* 주황색 #FF6000 */
+
+
+/* 컬러 끝 */
+
+
 /* 공통부분 */
+* {}
+
+a {
+  text-decoration: none;
+}
+
 
 .inner {
   width: 1200px;
   margin: 0 auto;
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 20px;
+  font-weight: ;
 
 }
 
-.wrap { 
+.wrap {
   width: 1900px;
   margin: 0 auto;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
+
 }
+
+
+.title li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.title li:nth-child(1) {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+
+
+
+
+
+/* 공통부분 끝 */
+
+
+/* 헤더부분 */
+header {
+  display: flex;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo_box {
+  margin-left: 20px;
+}
+
+header .nav {
+  font-weight: bold;
+  margin-right: 20px;
+
+}
+
+/* 헤더 네비 부분 */
+
+header .nav {}
+
+header .nav ul {}
+
+header .nav ul li {
+  display: inline-block;
+}
+
+
+header .nav ul li {
+  margin-left: 50px;
+  color: #292929;
+}
+
+header .nav ul li :first-child {
+  margin-left: 0px;
+}
+
+
+header .nav ul li a {
+  color: #292929;
+}
+
+
+header .nav .orange {
+  color: #FF6000;
+}
+
+
+
+/* 헤더끝 */
+
+/* main 시작 */
+.main {
+  background-image: url(../images/main_image.png);
+  height: 850px;
+  position: relative;
+}
+
+.main img {
+  position: absolute;
+  left: calc(50% - 65px);
+  bottom: -65px;
+
+
+}
+
+
+
+
+/* main 끝 */
+
+/* art1 시작  */
+
+.art1 {
+  height: 1613px;
+  background-color: #FFF8E8;
+  text-align: center;
+}
+
+.art1 ul {
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 45px;
+}
+
+.art1 ul li span {
+  color: #4DBED9;
+  font-weight: bold;
+}
+
+.art1 ul li:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.art1 ul li:nth-child(2) {
+  margin-bottom: 75px;
+}
+
+
+.art1 .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.art1 .container .art1_box {
+  margin: 0 25px;
+
+}
+
+.art1 .container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.art1 .container2 .art1_box {
+  margin: 0 25px;
+}
+
+/* art1 끝 */
+
+
+
+
+/* art2 시작 */
+
+
+.art2 {
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+}
+
+
+.art2 ul {
+  margin-left: 20px;
+}
+
+.art2 ul {
+  margin-bottom: 43px;
+}
+
+.art2 img {
+  margin-left: 20px;
+}
+
+
+/* art2 끝 */
+
+
+
+
+
+
+/* art3 시작 */
+
+.art3 {
+  background-image: url(../images/art3_bgimage.png);
+  height: 2024px;
+}
+
+.art3 .title {
+  display: inline-block;
+  margin: 150px 0 153px 370px;
+}
+
+
+.art3 .container {
+  margin-left: 350px;
+}
+
+.art3_box {
+  margin-bottom: 50px;
+}
+/* art3 끝 */
+
+
+
+
+
+
+/* art4 시작 */
+
+.art4 {
+  background-image: url(../images/art4_bgimage.png);
+  height: 772px;
+  
+}
+
+.art4 .title {
+  display: inline-block;
+  margin-left: 370px;
+  margin-top: 150px;
+}
+
+
+
+
+/* art4 끝 */
+
+
+
+
+/* footer 시작 */
+
+
+.footer {
+  height: 90px;
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer_text {
+  color: #292929;
+
+  font-size: 16px;
+}
+
+.footer_text ul {
+}
+.footer_text ul li {
+  display: inline-block;
+}
+
+.footer_text ul li:nth-child(1) {
+  font-weight: bold;
+}
+
+.footer_text ul li:nth-child(2) {
+  margin-left: 100px;
+}
+
+.footer_text ul li:nth-child(3) {
+  margin-left: 42px;
+}
+
+.footer_text ul li:nth-child(4) {
+  margin-left: 42px;
+}
+
+.footer_text ul li:nth-child(5) {
+  margin-left: 100px;
+color: #FF6000;
+font-weight: bold;
+}
+
+
+
+.footer_text ul li a {
+  text-decoration: none;
+  color: #292929;
+}
+
+
+/* footer2 끝 */
+
+
+/* footer 끝 */
+
+
+/* footer2 시작 */
+
+
+.footer2 {
+  position: relative;
+  height: 150px;
+  background-color: #F9F9F9;
+  font-size: 14px;
+}
+
+.footer2 .logo_box {
+  position: absolute;
+  top: 35px;
+  left: 370px;
+}
+.footer2_text {
+  position: absolute;
+  top: 40px;
+  left: 568px;
+
+}
+.footer2 li {
+  color: #B7B7B7;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer2 .kakao {
+  position: absolute;
+  right: 410px;
+  bottom: 35px;
+}
+
+
+
+
+
