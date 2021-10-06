@@ -142,6 +142,8 @@ nav {
   height: 70px;
   background-color: #1A53A4;
   position: relative;
+  top: 1px;
+  z-index: 2;
 }
 
 nav ul {}
@@ -206,7 +208,7 @@ nav input {
 .main .btn {
   position: absolute;
   left: calc(50% - 148px);
-  bottom: 76.5px;
+  bottom: 200px;
 }
 
 
@@ -214,43 +216,21 @@ nav input {
 
 /* 메인 비디오 자리 */
 
-.main .video {
+.main .video_group {
+  width: 1900px;
+  height: 780px;
+  overflow: hidden;
+}
+
+.main .video_group video {
+  width: 100%;
+}
+
+.main .text_img {
   position: absolute;
-  left: calc(50% - 390px);
-  bottom: 294px;
-  display: flex;
-  width: 780px;
-  justify-content: space-between;
+  top: 180px;
+  left: 501px;
 }
-
-.main .video .video_left {
-  width: 350px;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.main .video .video_left .video_left_box {
-  font-size: 32px;
-}
-
-.main .video .video_right {
-  width: 350px;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .video .video_right .video_right_box {
-  font-size: 32px;
-
-}
-
 
 /* 메인 끝 */
 /* art1 시작 */
