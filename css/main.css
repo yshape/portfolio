@@ -53,11 +53,12 @@ a {
   display: flex;
 }
   .left {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
   }
 
   .right {
+    margin-top: 60px;
     display: flex;
   }
 
