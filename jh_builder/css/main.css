@@ -202,6 +202,11 @@ nav input {
   border-style: none;
 }
 
+nav input:focus {
+  outline: none;
+}
+
+
 
 
 /* 네비 끝 */
@@ -218,8 +223,6 @@ nav input {
   bottom: 200px;
 }
 
-
-.gline {}
 
 /* 메인 비디오 자리 */
 
@@ -584,4 +587,6 @@ footer .right ul li a {}
   bottom: 30px;
 }
 
-/* ooter 끝 */
+/* footer 끝 */
+
+

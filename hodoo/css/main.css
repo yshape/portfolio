@@ -115,7 +115,7 @@ header .nav .orange {
 
 /* main 시작 */
 .main {
-  background-image: url(../images/main_image.png);
+  background: url(../images/main_image.png);
   height: 850px;
   position: relative;
 }
@@ -220,8 +220,10 @@ header .nav .orange {
 /* art3 시작 */
 
 .art3 {
+  position: relative;
   background-image: url(../images/art3_bgimage.png);
-  height: 2024px;
+  border-radius: 100px;
+  padding-bottom: 50px;
 }
 
 .art3 .title {
@@ -239,7 +241,35 @@ header .nav .orange {
 }
 /* art3 끝 */
 
+.art3 .btn {
+  position: absolute;
+  left: 494px;
+  top: 351px;
+  transform: scale(2.8);
+  padding: 20px;
+  
+}
 
+.art3 .detail {
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  left: 370px;
+  top: 340px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.art3 .container {
+  display: none;
+}
+
+.btn:checked ~ .container {
+  display: block;
+  transition: .3s;
+
+}
 
 
 
