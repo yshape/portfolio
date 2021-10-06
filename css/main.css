@@ -9,99 +9,84 @@
   font-family: 'SBAggroB';
 }
 
-.contents .title {
-  margin: 20px 0;
-  text-align: center;
-}
-
 .inner {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
-  font-family: 'SBAggroB'
-}
-
-.contents {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-}
-
-.link {
-  width: 300px;
-  border: 3px solid rgb(60, 129, 220);
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
-  transition: .2s;
-}
-
-.link:hover {
-background-color: royalblue;
-color: white;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 a {
   text-decoration: none;
-  color: rgb(55, 83, 208);
+  color: royalblue;
 }
 
-.well_kids_link .logo {
-  margin-left: 15px;
-
+.logo_box {
+  margin-top: 10px;
 }
 
-.jh_link .logo {
-  margin-left: 110px;
-
-}
-
-.techpia_link .logo {
-  margin-left: 55px;
-}
-
-.well_kids_link .logo {}
-
-.kind_coffee_link .logo {
-  margin-left: 88px;
+.left_box:hover,
+.right_box:hover {
+  background-color: royalblue;
+  color: white;
 
 }
 
-.Lesis_link .logo {
-  margin-left: 70px;
-
+.left_box,
+.right_box {
+  margin: 0px 10px;
+  border: 2px solid royalblue;
+  box-sizing: border-box;
+  padding: 20px;
+  transition: .2s;
+  border-radius: 10px;
 }
 
-.Hodoo_link .logo {
-  margin-left: 100px;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.text_box {
+  margin-top: 40px;
+  display: flex;
+}
+  .left {
+    margin-top: 100px;
+    display: flex;
+  }
+
+  .right {
+    display: flex;
+  }
+
+
+/* 호두 링크  */
+
+/* 메모장 */
+
 .memo {
-}
-.memo_img {
-  position: relative;
-  margin-bottom: 30px;
-  z-index: 0;
-}
-
-.memo ul {
-position: absolute;
-top: 123px;  
-left: 310px;
+  height: 200px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid royalblue;
+  border-radius: 20px;
+  
 }
 
-.memo ul li {
-  margin-bottom: 39px;
-  font-size: 14px;
+.memo .text_box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.text_box1 p {
+  margin: 12px 0;
+}
 
-.memo span {
-  position: absolute;
-  right: 220px;
-  top: 92px;
-  font-size: 14px;
-  color: green;
+.title {
+  text-align: center;
+  padding: 5px 0;
 }
