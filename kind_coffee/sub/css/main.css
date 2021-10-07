@@ -1,0 +1,154 @@
+/* 에스코어 시작  */
+
+/* 에스코어 4 레귤러 */
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 5 미들 */
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 6 볼드 */
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 부분 시작 */
+
+.inner {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 18px;
+  width: 1200px;
+  margin: 0 auto;
+  color: #111111;
+}
+
+.wrap {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 18px;
+  width: 1900px;
+  margin: 0 auto;
+}
+
+/* 헤더 + 네비 시작 */
+
+header {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a img {}
+
+header a ul {
+  height: 100px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+header ul li:not(:first-child) {
+  margin-left: 75px;
+}
+
+header .nav_box a {
+  background-color: #231F20;
+  padding: 6px 36px;
+  color: white;
+  border-radius: 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* 헤더 + 네비 끝 */
+
+/* main 시작 */
+
+
+
+
+
+/* main 끝 */
+
+/* art1 시작 */
+
+
+
+
+
+/* art1 끝 */
+
+/* art2 시작 */
+
+
+
+
+
+/* art2 끝 */
+
+/* art3 시작 */
+
+
+
+
+
+/* art3 끝 */
+
+/* art4 시작 */
+
+
+
+
+
+/* art4 끝 */
+
+/* art5 시작 */
+
+
+
+
+
+/* art5 끝 */
+
+/* art6 시작 */
+
+
+
+
+
+/* art6 끝 */
+
+
+/* art7 시작 */
+
+
+
+
+
+/* art7 끝 */
+

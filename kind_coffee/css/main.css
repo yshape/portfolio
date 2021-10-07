@@ -57,13 +57,13 @@
   font-family: 'S-CoreDream-7ExtraBold';
   font-size: 45px;
 }
+a {
+  text-decoration: none;
+}
 
 /* 공통 부분 끝 */
 
 /* 헤더 + 네비 시작 */
-a {
-  text-decoration: none;
-}
 
 header {
   height: 110px;

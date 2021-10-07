@@ -241,31 +241,40 @@ header .nav .orange {
 }
 /* art3 끝 */
 
-.art3 .btn {
+.art3 #btn {
   position: absolute;
-  left: 494px;
-  top: 351px;
   transform: scale(2.8);
-  padding: 20px;
-  
+  left: 370px;
+  top: 340px;
+  display: none;
 }
 
-.art3 .detail {
-  font-size: 16px;
-  font-weight: 700;
+.art3 label {
+  font-size: 14px;
   position: absolute;
   left: 370px;
   top: 340px;
-  padding: 10px;
-  border: 2px solid black;
+  cursor: pointer;
+  padding: 10px 14px;
+  border: 2px solid #292929;
   border-radius: 20px;
+  font-weight: bold;
 }
+
+.art3 label:hover {
+  background-color: #4DBED9;
+  border: 2px solid #4DBED9;
+  color: white;
+
+}
+
+
 
 .art3 .container {
   display: none;
 }
 
-.btn:checked ~ .container {
+#btn:checked ~ .container {
   display: block;
   transition: .3s;
 
