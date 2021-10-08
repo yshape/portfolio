@@ -83,6 +83,7 @@ header ul li {
 }
 
 header ul li a {
+  font-size: 14px;
   text-decoration: none;
   color: #111111;
 }

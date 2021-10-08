@@ -1,0 +1,85 @@
+/* 공통부분 */
+/* 에스코어 4 레귤러 */
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 5 미들 */
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 6 볼드 */
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 사용 색상 */
+
+/* #3B3B3B */
+
+* {}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'S-CoreDream-6Bold';
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+}
+
+
+/* header 시작 */
+
+header {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {}
+
+/* header 끝 */
+
+/* nav 시작 */
+
+nav {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 90px;
+}
+
+nav ul li:first-child {
+  margin-left: 0px;
+}
+
+nav ul li a {
+  color: #3B3B3B;
+  text-decoration: none;
+}
+
+/* nav 끝 */
