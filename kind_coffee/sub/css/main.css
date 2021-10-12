@@ -163,10 +163,30 @@ header .nav_box a {
 
 
 .art5 {
+  position: relative;
   height: 190px;
-  background: url(../images/art5_bgimage.png);
+  background-color: #EFEFEF;
 }
 
+.art5 .container {
+  position: absolute;
+  width: 1095px;
+  height: 80px;
+  left: 380px;
+  top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.art5_link {
+  transition: .2s;
+}
+
+.art5_link:hover {
+  transform: scale(1.05);
+}
 
 /* art5 끝 */
 
@@ -218,7 +238,7 @@ header .nav_box a {
 }
 
 .art7 table {
-  width:  1000px;
+  width: 1000px;
   height: 360px;
   text-align: center;
 }
@@ -233,6 +253,7 @@ header .nav_box a {
 .art7 table tr {
   padding: 20px;
 }
+
 .art7 table tr td {
   color: #707070;
   font-size: 16px;
@@ -278,13 +299,13 @@ footer .footer_nav ul {
   top: 40px;
 }
 
-footer  .footer_nav li {
+footer .footer_nav li {
   display: inline-block;
   margin-right: 50px;
   font-size: 16px;
 }
 
-footer  .footer_nav ul li a {
+footer .footer_nav ul li a {
   text-decoration: none;
   color: #111111;
 }
@@ -330,5 +351,3 @@ footer ul li:last-child a {
 }
 
 /* footer 끝 */
-
-

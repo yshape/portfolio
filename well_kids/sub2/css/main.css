@@ -48,6 +48,13 @@ a {
   text-decoration: none;
 }
 
+
+.gline   {
+  width: 1140px;
+  height: 1px;
+  background-color: #E9E9E9;
+  margin-top: 100px;
+}
 /* header 시작 */
 
 header {
@@ -160,141 +167,116 @@ nav ul li a {
   font-size: 16px;
 }
 
-.radio .item:nth-child(1) {
+.radio .item:nth-child(1):hover {
   background-color: #00D7D3;
 }
 
-.radio .item:nth-child(2):hover {
+.radio .item:nth-child(2) {
   background-color: #00D7D3;
 
 }
 
-/* 닥터그룹 시작 */
-
-
-
-
-
-
-/* 닥터그룹 끝 */
 
 /* art1 시작 */
 
+
+
 .art1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.art1_box {
-  display: flex;
-  margin-top: 100px;
-  margin-left: 40px;
-}
-
-.art1_box .right {
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
+  position: relative;
 }
 
-.art1_box .right .text {
-  font-size: 14px;
+.art1 .text {
+  margin-top: 150px;
+  margin-left: 30px;
+}
+.art1 .text ul {}
+.art1 .text ul li {}
+
+.art1 .text ul li:nth-child(1) {
   margin-bottom: 30px;
-}
-
-.art1_box .right .text ul {}
-
-.art1_box .right .text ul li {}
-
-.art1_box .right .text ul li:nth-child(1) {
   font-size: 20px;
-  margin-bottom: 23px;
 }
-
-.art1_box .right .text ul li span {
-  font-size: 14px;
+.art1 .text ul li:nth-child(2) {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 16px;
+  line-height: 35px;
   color: #707070;
 }
 
-.art1_box .right .text ul li:nth-child(2) {
-  color: #1689FC;
-  margin-bottom: 10px;
-
-}
-
-
-.art1_box .right .table table {
-  width: 650px;
-  height: 140px;
-  text-align: center;
-  font-size: 14px;
-  margin-bottom: 40px;
-}
-
-.art1_box .right .table table td {
-  border: 1px solid #E6E6E6;
-  vertical-align: middle;
-}
-
-.art1_box .right .table table td:first-child {
-  border-left: none;
-}
-
-.art1_box .right .table table td:last-child {
-  border-right: 0;
-}
-
-
-.art1_box .right .table table tr:first-child {
-  background-color: #F9F9F9;
-}
-
-
-.art1_box .right .table table tr:nth-child(2) td:not(:first-child), 
-.art1_box .right .table table tr:nth-child(3) td:not(:first-child) {
-  color: #00D7D3
-}
-
-
-.art1_box .right .btn_g {
-  display: flex;
-  text-align: center;
-}
-
-.art1_box .right .btn_g .btn {
-  width: 140px;
-  height: 40px;
-  font-size: 14px;
-  line-height: 40px;
-  border: 1px solid #C9C9C9;
-  border-radius: 20px;
-  margin-right: 20px;
-  transition: .3s;
-}
-
-.art1_box .right .btn_g .btn:hover {
-  background-color: #00D7D3;
-  border: 1px solid #00D7D3;
-}
-
-.art1_box .right .btn_g a {
-  color: #3B3B3B;
-}
-
-
-.art1_box .right .btn_g .btn a {
-  color: #3B3B3B;
-
-}
-
-
-
-
-
-
 
 /* art1 끝 */
+
+
+
+/* art2 시작 */
+.art2 {
+  display: flex;
+}
+
+.art2 .text{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.art2 .img {
+  margin-top: 50px;
+  margin-left: 100px;
+
+}
+
+
+/* art2 끝 */
+
+/* art3 시작 */
+.art3 {
+  display: flex;
+}
+
+.art3 .text{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.art3 .img {
+  margin-top: 50px;
+  margin-left: 138px;
+
+}
+
+
+/* art3 끝 */
+
+
+/* art4 시작 */
+.art4 {
+  display: flex;
+}
+
+.art4 .text{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.art4 .img {
+  margin-top: 50px;
+  margin-left: 138px;
+
+}
+
+
+/* art3 끝 */
+
+
+
+
+
+
+
+
 
 /* footer 시작  */
 
@@ -342,4 +324,4 @@ nav ul li a {
 }
 
 
-/* footer 끝 */
+/* footer 끝  */

@@ -35,8 +35,8 @@ a {
 .left_box,
 .right_box {
   margin: 0px 10px;
-  border: 2px solid royalblue;
   box-sizing: border-box;
+  border: 5px solid white;
   padding: 20px;
   transition: .2s;
   border-radius: 10px;
