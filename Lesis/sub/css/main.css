@@ -19,8 +19,6 @@
 }
 
 
-
-
 /* 공통부분 */
 
 .inner {
@@ -41,122 +39,12 @@
 
 * {}
 
-/* 가로형 텍스트 그룹 */
-
-.text_g1 {}
-
-.text_g1 li {
-  display: inline-block;
-  color: #4E3836;
-}
-
-.text_g1 a {
-  margin-left: 10px;
-  color: #C09A98;
-  text-decoration: underline;
-}
-
-/* 가로형 텍스트 그룹 끝 */
-
-
-
-/* 세로형 텍스트 그룹 시작 */
-
-.text_g2 {}
-
-.text_g2 ul {}
-
-.text_g2 li:nth-child(1) {
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.text_g2 li:nth-child(2) {
-  margin-bottom: 10px;
-}
-
-.text_g2 li:nth-child(3) {
-  margin-bottom: 20px;
-}
-
-.text_g2 li a {
-  color: #C09A98;
-  text-decoration: underline;
-}
-
-/* 세로형 텍스트 그룹 끝 */
-
-/* 세로형 텍스트 오른쪽 기준 시작 */
-
-
-.text_g3 {
-  text-align: right;
-}
-
-.text_g3 ul {}
-
-.text_g3 li:nth-child(1) {
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.text_g3 li:nth-child(2) {
-  margin-bottom: 20px;
-}
-
-.text_g3 li:nth-child(3) {
-  margin-bottom: 20px;
-}
-
-.text_g3 li a {
-  color: #C09A98;
-  text-decoration: underline;
-}
-
-
-/* 세로형 텍스트 오른쪽 기준 끝 */
-
-/* 2줄짜리 세로형 왼쪽 기준 시작 */
-
-.text_g4 {
-  text-align: left;
-}
-
-.text_g4 ul {}
-
-.text_g4 li:nth-child(1) {
-  margin-bottom: 20px;
-}
-
-.text_g4 li:nth-child(2) {
-  margin-bottom: 20px;
-}
-
-.text_g4 li:nth-child(3) {
-  margin-bottom: 20px;
-}
-
-.text_g4 li a {
-  color: #C09A98;
-  text-decoration: underline;
-}
-
-/* 2줄짜리 세로형 왼쪽 기준 끝 */
-
-
 /* 메인 시작 */
-
-a {
-  text-decoration: none;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 20px;
-}
-
 
 .main {
   position: relative;
   background: url(../images/main_image.png) center no-repeat;
-  height: 900px;
+  height: 375px;
 }
 
 .main nav {
@@ -164,7 +52,13 @@ a {
   color: white;
   display: flex;
   justify-content: space-between;
+
 }
+
+.main nav a {
+  text-decoration: none;
+}
+
 
 .main .logo {
   position: absolute;
@@ -234,153 +128,197 @@ a {
   color: white;
 }
 
+.main,
+.title,
+.art1 {
+  /* display: none; */
+}
+
 
 
 /* 메인 끝 */
+
 
 /* art1 시작  */
 
 
 .art1 {
   position: relative;
-  height: 800px;
-  margin-top: -2px;
+  height: 1223px;
+  background: url(../images/art1_bgimage.png);
 }
 
-.art1 .ast1 {
+.art1 .container1 {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  right: 721px;
-  bottom: 255px;
+  left: 500px;
+  bottom: 342px;
+  width: 900px;
+  height: 172px;
 }
 
-.art1 .ast2 {
-  position: absolute;
-  right: 379px;
-  bottom: 255px;
+.art1 .container1 .box {
+  position: relative;
+  width: 370px;
+  height: 172px;
+  overflow: hidden;
 }
 
-.art1 .text_g1 {
+.art1 .container1 .box .obj {
   position: absolute;
-  top: 160px;
-  right: 550px;
+  right: -100px;
+  bottom: -5px;
+  transition: .3s;
 }
 
-.art1 .text_g2 {
-  position: absolute;
-  right: 475px;
-  bottom: 60px;
+.art1 .container1 .box:hover > .obj {
+  transform: translateX(-74px) rotate(2deg);
 }
+
+.art1 .container1 .box .text a{
+  position: absolute;
+  bottom: 53px;
+  left: 67px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
+/* /////////////////////////////////// */
+
+.art1 .container2 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 500px;
+  bottom: 95px;
+  width: 900px;
+  height: 172px;
+}
+
+.art1 .container2 .box {
+  position: relative;
+  width: 370px;
+  height: 172px;
+  overflow: hidden;
+}
+
+.art1 .container2 .box .obj {
+  position: absolute;
+  right: 20px;
+  bottom: -50px;
+  transition: .3s;
+}
+
+.art1 .container2 .box:hover > .obj {
+  transform: translateY(-40px) rotate(3deg) ;
+}
+
+.art1 .container2 .box .text a{
+  position: absolute;
+  bottom: 53px;
+  left: 67px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
+
+
 
 
 /* art1 끝 */
 
+.art2 {
+  position: relative;
+  height: 981px;
+  background: url(../images/art2_bgimage.png);
+}
+
+.art2 .container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 500px;
+  bottom: 100px;
+  width: 900px;
+  height: 172px;
+}
+
+.art2 .container .box {
+  position: relative;
+  width: 370px;
+  height: 172px;
+  overflow: hidden;
+}
+
+.art2 .container .box .obj {
+  position: absolute;
+  right: 28px;
+  bottom: -60px;
+  transition: .3s;
+}
+
+.art2 .container .box:hover > .obj {
+  transform: translateY(-47px) rotate(10deg);
+}
+
+.art2 .container .box .text a{
+  position: absolute;
+  bottom: 53px;
+  left: 67px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
 /* art2 시작 */
 
 
-.art2 {
-  position: relative;
-}
-
-
-.art2 .text_g1 {
-  position: absolute;
-  top: 154px;
-  left: 520px;
-}
-
-.art2 .text_g3 {
-  position: absolute;
-  left: 458px;
-  bottom: 60px;
-}
 
 /* art2 끝 */
 
-.divide2 {
-  margin-top: -2px;
-}
+
+
 
 
 /* art3 시작 */
 
-.art3 {
-  position: relative;
-  margin-top: -2px;
-  height: 1425px;
-  background-image: url(../images/art3_image.png);
-}
-
-.art3 .ast1 {
-  position: absolute;
-  left: 388px;
-  bottom: 489px;
-  z-index: 1;
-}
-
-.art3 .ast2 {
-  position: absolute;
-  left: 686px;
-  bottom: 419px;
-  z-index: 1;
-}
-
-.art3 .ast3 {
-  position: absolute;
-  right: 684px;
-  bottom: 359px;
-  z-index: 1;
-}
-
-.art3 .ast4 {
-  position: absolute;
-  right: 402px;
-  bottom: 299px;
-  z-index: 1;
-}
-
-.art3 .text_g3 {
-  position: absolute;
-  right: 454px;
-  bottom: 140px;
-}
-
-.art3 .text_g4 {
-  line-height: 65px;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 120px;
-  left: 438px;
-}
 
 /* art3 끝 */
 
+
+
+
 /* art4 시작 */
-
-.art4 {
-  z-index: 2;
-
-  position: relative;
-  background: url(../images/art4_image.png) center no-repeat;
-  height: 1250px;
-
-}
-
-.art4 .text_g4 {
-  position: absolute;
-  top: 365px;
-  right: 550px;
-}
 
 
 
 /* art4 끝 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer 시작 */
 
 
-.footer {
+/* .footer {
   z-index: 1;
   position: relative;
   background-color: #A36D6A;
@@ -433,11 +371,11 @@ a {
 .footer .box1 li:nth-child(2) {
   font-size: 42px;
   font-family: 'ChosunSm';
-}
+} */
 
 
 /* 박스 2,3 공통 */
-.footer .box2 a,
+/* .footer .box2 a,
 .footer .box3 a {
   text-decoration: underline;
   color: white;
@@ -469,7 +407,7 @@ a {
 
 .footer .box4 li:nth-child(5) {
   margin-bottom: 20px;
-}
+} */
 
 
 /* footer 끝 */

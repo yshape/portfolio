@@ -162,8 +162,9 @@ nav ul a li:hover {
   color: #195B31;
 }
 
-nav ul a li:nth-child(5) {
+nav .magazine {
   color: #195B31;
+  font-weight: bold;
 }
 
 /* 헤더끝  */
@@ -272,6 +273,7 @@ nav ul a li:nth-child(5) {
 .art2 .container .right .link {
   display: none;
   margin-top: 10px;
+  margin-left: 50px;
 }
 
 
@@ -328,6 +330,11 @@ nav ul a li:nth-child(5) {
   margin-right: 30px;
 }
 
+.art3 .container .box .right {
+  margin-top: 75px;
+  margin-left: 10px;
+}
+
 
 .art3 .container .right ul li:nth-child(1) {
   font-size: 14px;
@@ -361,7 +368,9 @@ nav ul a li:nth-child(5) {
 /* art4 시작 */
 
 
-.art4 {}
+.art4 {
+  margin-bottom: 100px;
+}
 
 .art4 .container1 {
   display: flex;
