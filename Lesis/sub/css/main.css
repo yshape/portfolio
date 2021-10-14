@@ -130,7 +130,8 @@
 
 .main,
 .title,
-.art1 {
+.art1,
+.art2 {
   /* display: none; */
 }
 
@@ -172,11 +173,11 @@
   transition: .3s;
 }
 
-.art1 .container1 .box:hover > .obj {
-  transform: translateX(-74px) rotate(2deg);
+.art1 .container1 .box:hover>.obj {
+  transform: translateX(-74px) ;
 }
 
-.art1 .container1 .box .text a{
+.art1 .container1 .box .text a {
   position: absolute;
   bottom: 53px;
   left: 67px;
@@ -211,11 +212,11 @@
   transition: .3s;
 }
 
-.art1 .container2 .box:hover > .obj {
-  transform: translateY(-40px) rotate(3deg) ;
+.art1 .container2 .box:hover>.obj {
+  transform: translateY(-40px) rotate(3deg);
 }
 
-.art1 .container2 .box .text a{
+.art1 .container2 .box .text a {
   position: absolute;
   bottom: 53px;
   left: 67px;
@@ -229,6 +230,10 @@
 
 
 /* art1 끝 */
+
+
+/* art2 시작 */
+
 
 .art2 {
   position: relative;
@@ -260,11 +265,11 @@
   transition: .3s;
 }
 
-.art2 .container .box:hover > .obj {
+.art2 .container .box:hover>.obj {
   transform: translateY(-47px) rotate(10deg);
 }
 
-.art2 .container .box .text a{
+.art2 .container .box .text a {
   position: absolute;
   bottom: 53px;
   left: 67px;
@@ -273,18 +278,125 @@
   color: #4E3836;
 }
 
-/* art2 시작 */
-
-
-
 /* art2 끝 */
-
-
 
 
 
 /* art3 시작 */
 
+.art3 {
+  margin-top: 100px;
+}
+
+.art3 .container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art3 .container1 .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center
+}
+
+.art3 .container1 .box .text {
+  margin-top: 170px;
+}
+
+.art3 .container1 .box .text ul {}
+
+.art3 .container1 .box .text ul li:nth-child(1) {
+  font-family: 'ChosunSm';
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.art3 .container1 .box .text ul li:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+}
+
+
+.art3 .container1 .box .text ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
+
+.art3 .container1 .box .obj {
+  position: absolute;
+  bottom: 170px;
+  opacity: 0.3;
+  transition: .3s;
+  
+}
+
+.art3 .container1 .box img:hover ~ .obj {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+
+
+
+.art3 .container2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.art3 .container2 .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center
+}
+
+.art3 .container2 .box .text {
+  margin-top: 170px;
+}
+
+.art3 .container2 .box .text ul {}
+
+.art3 .container2 .box .text ul li:nth-child(1) {
+  font-family: 'ChosunSm';
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.art3 .container2 .box .text ul li:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+}
+
+
+.art3 .container2 .box .text ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
+
+.art3 .container2 .box .obj {
+  position: absolute;
+  bottom: 170px;
+  opacity: 0.3;
+  transition: .3s;
+  
+}
+
+.art3 .container2 .box img:hover ~ .obj {
+  opacity: 1;
+  transform: scale(1.05);
+}
 
 /* art3 끝 */
 
@@ -318,12 +430,11 @@
 /* footer 시작 */
 
 
-/* .footer {
-  z-index: 1;
+.footer {
+  margin-top: 150px;
   position: relative;
   background-color: #A36D6A;
-  height: 900px;
-  margin-top: -200px;
+  height: 683px;
   color: white;
   font-size: 14px;
 }
@@ -331,19 +442,19 @@
 .footer img:nth-child(1) {
   position: absolute;
   right: 464px;
-  top: 252px;
+  top: 52px;
 }
 
 .footer img:nth-child(2) {
   position: absolute;
   right: 464px;
-  bottom: 54px;
+  bottom: 75px;
 }
 
 .footer .text_box_group {
-  top: 269px;
-  left: 400px;
   position: absolute;
+  top: 52px;
+  left: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -371,11 +482,13 @@
 .footer .box1 li:nth-child(2) {
   font-size: 42px;
   font-family: 'ChosunSm';
-} */
+} 
 
 
 /* 박스 2,3 공통 */
-/* .footer .box2 a,
+
+
+.footer .box2 a,
 .footer .box3 a {
   text-decoration: underline;
   color: white;
@@ -407,7 +520,7 @@
 
 .footer .box4 li:nth-child(5) {
   margin-bottom: 20px;
-} */
+}
 
 
 /* footer 끝 */
