@@ -294,6 +294,23 @@ a {
   bottom: 60px;
 }
 
+.art2 .imgbox {
+  position: absolute;
+  left: 350px;
+  top: 217px;
+  overflow: hidden;
+}
+
+.art2 .imgbox .obj {
+  transition: .3s;
+}
+
+
+.art2:hover .imgbox .obj {
+  transform: scale(1.05);
+}
+
+
 /* art2 끝 */
 
 .divide2 {
@@ -310,11 +327,35 @@ a {
   background-image: url(../images/art3_image.png);
 }
 
+.art3:hover .ast1 {
+  opacity: 1;
+  transition-duration: 1s , 1s;
+}
+.art3:hover .ast2 {
+  opacity: 1;
+  transition-duration: 2s , 1s;
+  
+}
+
+.art3:hover .ast3 {
+  opacity: 1;
+  transition-duration: 3s , 1s;
+}
+
+.art3:hover .ast4 {
+  opacity: 1;
+  transition-duration: 4s , 1s;
+}
+
+
+
+
 .art3 .ast1 {
   position: absolute;
   left: 388px;
   bottom: 489px;
   z-index: 1;
+  opacity: .3;
 }
 
 .art3 .ast2 {
@@ -322,6 +363,8 @@ a {
   left: 686px;
   bottom: 419px;
   z-index: 1;
+  opacity: .3;
+
 }
 
 .art3 .ast3 {
@@ -329,6 +372,8 @@ a {
   right: 684px;
   bottom: 359px;
   z-index: 1;
+  opacity: .3;
+
 }
 
 .art3 .ast4 {
@@ -336,6 +381,8 @@ a {
   right: 402px;
   bottom: 299px;
   z-index: 1;
+  opacity: .3;
+
 }
 
 .art3 .text_g3 {
