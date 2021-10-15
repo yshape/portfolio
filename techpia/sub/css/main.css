@@ -173,8 +173,15 @@ nav .magazine {
 
 
 .art1 {
+  position: relative;
   background-color: #F3F3F3;
   height: 274px;
+}
+
+.art1 .megazine {
+  position: absolute;
+  bottom: -39px;
+  right: 402px;
 }
 
 

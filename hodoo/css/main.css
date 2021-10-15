@@ -20,6 +20,12 @@
 /* 공통부분 */
 * {}
 
+aside {
+  position: fixed;
+  right: 1%;
+  top: 45%;
+  z-index: 2;
+}
 a {
   text-decoration: none;
 }
@@ -41,12 +47,16 @@ a {
 
 }
 
+.title {
+  text-align: center;
+}
 
 .title li {
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 30px;
 }
+
 .title li:nth-child(1) {
   font-weight: bold;
   font-size: 40px;
@@ -76,6 +86,7 @@ header .logo_box {
 header .nav {
   font-weight: bold;
   margin-right: 20px;
+  margin-top: 20px;
 
 }
 
@@ -87,10 +98,7 @@ header .nav ul {}
 
 header .nav ul li {
   display: inline-block;
-}
-
-
-header .nav ul li {
+  text-align: center;
   margin-left: 50px;
   color: #292929;
 }
@@ -104,10 +112,31 @@ header .nav ul li a {
   color: #292929;
 }
 
+header .nav ul li a:hover {
+  color: #FF6000;
+}
 
 header .nav .orange {
   color: #FF6000;
 }
+
+.nav ul li::after {
+  margin-top: 6px;
+  display: inline-block;
+  content: "";
+  width: 1%;
+  height: 2px;
+  background-color: white;
+  transition: .3s;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+  background-color: #FF6000;
+
+}
+
+
 
 
 
@@ -122,10 +151,27 @@ header .nav .orange {
 
 .main img {
   position: absolute;
-  left: calc(50% - 65px);
+  left: calc(50% - 76.64px);
   bottom: -65px;
 
+}
 
+.main .obj {
+  position: absolute;
+  left: 759px;
+  top: 350px;
+  animation-name: moving;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moving {
+  from {}
+
+  to {
+    transform: translateY(-30px);
+  }
 }
 
 
@@ -144,20 +190,46 @@ header .nav .orange {
 .art1 ul {
   display: inline-block;
   margin-top: 150px;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .art1 ul li span {
   color: #4DBED9;
+  font-size: 45px;
   font-weight: bold;
 }
 
 .art1 ul li:nth-child(1) {
   margin-bottom: 32px;
+  position: relative;
 }
+
+.art1 ul li:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 20px;
+  bottom: -4px;
+  left: 10px;
+  background-color: #4DBED9;
+  opacity: .4;
+  transition: .3s;
+}
+
+.art1:hover ul li:nth-child(1)::after {
+  width: 395px;
+}
+
 
 .art1 ul li:nth-child(2) {
   margin-bottom: 75px;
+  opacity: .3;
+  transition: .3s;
+}
+
+.art1:hover ul li:nth-child(2) {
+  opacity: 1;
 }
 
 
@@ -227,6 +299,7 @@ header .nav .orange {
 }
 
 .art3 .title {
+  text-align: left;
   display: inline-block;
   margin: 150px 0 153px 370px;
 }
@@ -239,6 +312,7 @@ header .nav .orange {
 .art3_box {
   margin-bottom: 50px;
 }
+
 /* art3 끝 */
 
 .art3 #btn {
@@ -259,6 +333,7 @@ header .nav .orange {
   border: 2px solid #292929;
   border-radius: 20px;
   font-weight: bold;
+  transition: .2s;
 }
 
 .art3 label:hover {
@@ -274,7 +349,7 @@ header .nav .orange {
   display: none;
 }
 
-#btn:checked ~ .container {
+#btn:checked~.container {
   display: block;
   transition: .3s;
 
@@ -288,12 +363,13 @@ header .nav .orange {
 .art4 {
   background-image: url(../images/art4_bgimage.png);
   height: 772px;
-  
+
 }
 
 .art4 .title {
   display: inline-block;
-  margin-left: 370px;
+  text-align: center;
+  margin-left: 548px;
   margin-top: 150px;
 }
 
@@ -317,14 +393,15 @@ header .nav .orange {
   align-items: center;
 
 }
+
 .footer_text {
   color: #292929;
 
   font-size: 16px;
 }
 
-.footer_text ul {
-}
+.footer_text ul {}
+
 .footer_text ul li {
   display: inline-block;
 }
@@ -334,21 +411,26 @@ header .nav .orange {
 }
 
 .footer_text ul li:nth-child(2) {
-  margin-left: 100px;
+  margin-left: 120px;
 }
 
 .footer_text ul li:nth-child(3) {
-  margin-left: 42px;
+  margin-left: 52px;
 }
 
 .footer_text ul li:nth-child(4) {
-  margin-left: 42px;
+  margin-left: 52px;
 }
 
 .footer_text ul li:nth-child(5) {
   margin-left: 100px;
-color: #FF6000;
-font-weight: bold;
+}
+
+.footer_text ul li:nth-child(6) a {
+  color: #FF6000;
+  font-weight: bold;
+  margin-left: 72px;
+  margin-right: 30px;
 }
 
 
@@ -380,25 +462,26 @@ font-weight: bold;
   top: 35px;
   left: 370px;
 }
+
 .footer2_text {
   position: absolute;
   top: 40px;
   left: 568px;
 
 }
+
 .footer2 li {
   color: #B7B7B7;
   margin-bottom: 12px;
   font-size: 14px;
 }
 
-.footer2 .kakao {
+.footer2 .icons {
   position: absolute;
-  right: 410px;
-  bottom: 35px;
+  right: 395px;
+  bottom: 40px;
 }
 
-
-
-
-
+.footer2 .icons a {
+  margin-right: 20px;
+}
