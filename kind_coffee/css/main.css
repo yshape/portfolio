@@ -251,6 +251,40 @@ header .nav_box a {
   box-sizing: border-box;
 }
 
+.art3_lbox2
+{
+  overflow: hidden;
+}
+
+.art3_lbox2 img
+{
+  transition: .3s;
+}
+
+
+.art3_lbox2 img:hover
+{
+transform: scale(1.05);
+}
+
+.art3_rbox2,
+.art3_rbox1
+{
+  overflow: hidden;
+}
+
+.art3_rbox2 img,
+.art3_rbox1 img
+{
+  transition: .3s;
+}
+
+
+.art3_rbox2 img:hover,
+.art3_rbox1 img:hover
+{
+transform: scale(1.05);
+}
 
 /* art3 끝 */
 
