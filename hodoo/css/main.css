@@ -26,6 +26,7 @@ aside {
   top: 45%;
   z-index: 2;
 }
+
 a {
   text-decoration: none;
 }
@@ -214,7 +215,7 @@ header .nav .orange {
   left: 10px;
   background-color: #4DBED9;
   opacity: .4;
-  transition: .3s;
+  transition: .5s;
 }
 
 .art1:hover ul li:nth-child(1)::after {
@@ -271,16 +272,34 @@ header .nav .orange {
 
 .art2 ul {
   margin-left: 20px;
-}
-
-.art2 ul {
   margin-bottom: 43px;
 }
+
 
 .art2 img {
   margin-left: 20px;
 }
 
+.art2 ul li {
+  position: relative;
+}
+
+.art2 ul li:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 20px;
+  bottom: -12px;
+  left: 330px;
+  background-color: #F8D100;
+  opacity: .3;
+  transition: .5s;
+}
+
+.art2:hover ul li:nth-child(1)::after {
+  width: 522px;
+}
 
 /* art2 끝 */
 
@@ -361,6 +380,7 @@ header .nav .orange {
 /* art4 시작 */
 
 .art4 {
+  position: relative;
   background-image: url(../images/art4_bgimage.png);
   height: 772px;
 
@@ -373,6 +393,56 @@ header .nav .orange {
   margin-top: 150px;
 }
 
+
+
+.art4 .check_box {
+  opacity: .1;
+  transition: 1.6s;
+}
+
+.art4:hover .check_box {
+  opacity: 1;
+}
+
+.art4 .check1 {
+  position: absolute;
+  left: 476px;
+  bottom: 224px;
+}
+
+.art4 .check2 {
+  position: absolute;
+  left: 898px;
+  bottom: 239px;
+}
+
+.art4 .check3 {
+  position: absolute;
+  right: 473px;
+  bottom: 189px;
+}
+
+
+.art4 ul li {
+  position: relative;
+}
+
+.art4 ul li:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 20px;
+  bottom: -12px;
+  left: -5px;
+  background-color: #F8955A;
+  opacity: .3;
+  transition: .5s;
+}
+
+.art4:hover ul li:nth-child(1)::after {
+  width: 437px;
+}
 
 
 
