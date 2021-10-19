@@ -330,10 +330,10 @@ header .nav .orange {
 }
 
 .art2 .item {
-  transition: .3s;
+  transition: .2s;
 }
 .art2 .item:hover  {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 

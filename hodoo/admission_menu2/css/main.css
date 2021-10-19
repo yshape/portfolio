@@ -260,7 +260,6 @@ header .nav .orange {
 }
 
 
-
 .art1 .step_box .text {
   margin-left: 100px;
 }
@@ -300,6 +299,10 @@ margin-top: 30px;
 
 .art1 .step_box .text ul li .b_btn:hover ~ .test {
   display: block;
+}
+
+.art1 .step_box .box img {
+  margin-bottom: 45px;
 }
 
 

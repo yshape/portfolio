@@ -114,9 +114,19 @@ aside {
 }
 
 aside .item {
-  margin: 10px 0px;
+  opacity: .7;
+  transform: scale(.9);
+
+}
+aside .item:hover {
+  transform: scale(1);
+  opacity: 1;
 }
 
+
+aside .item {
+  margin: 10px 0px;
+}
 /* 헤더 끝 */
 
 
@@ -157,6 +167,9 @@ nav ul > a {
 nav ul > li:first-child {
 }
 
+nav ul > li:last-child {
+  margin-right: 140px;
+}
 
 nav ul > li a {
   font-family: 'S-CoreDream-5Medium';
@@ -174,10 +187,10 @@ nav ul > .main:not(:last-child):after {
   content: "";
   display: block;
   width: 2px;
-  height: 16px;
+  height: 14px;
   background-color: white;
   left: 130px;
-  top: 1px;
+  top: 3px;
 }
 
 nav .sub {
@@ -368,7 +381,7 @@ nav input:focus {
   position: relative;
   background-image: url(../images/art4_bgimage.png);
   height: 682px;
-}
+} 
 
 .art4 .title_box {
   position: absolute;

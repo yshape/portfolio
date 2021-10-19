@@ -57,6 +57,7 @@
   font-family: 'S-CoreDream-7ExtraBold';
   font-size: 45px;
 }
+
 a {
   text-decoration: none;
 }
@@ -190,6 +191,93 @@ header .nav_box a {
 /* art2 끝 */
 
 
+section {
+  box-sizing: border-box;
+  padding-top: 50px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url(../images/section_bgimg.png);
+  flex-direction: column;
+  position: relative;
+  background-color: #F5F5F5;
+  z-index: 2;
+}
+
+section .title {
+  padding-bottom: 65px;
+}
+
+section #player {
+  position: relative;
+  z-index: 2;
+}
+
+section .obj1>img {
+  position: absolute;
+  left: 401px;
+  top: 50px;
+  z-index: 1;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moving {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+section .obj2>img {
+  position: absolute;
+  right: 239px;
+  bottom: 153px;
+  z-index: 1;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+section .obj3>img {
+  position: absolute;
+  left: 200px;
+  bottom: -50px;
+  z-index: 1;
+  animation-name: obj3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes obj3 {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+
 
 /* art3 시작 */
 
@@ -251,39 +339,33 @@ header .nav_box a {
   box-sizing: border-box;
 }
 
-.art3_lbox2
-{
+.art3_lbox2 {
   overflow: hidden;
 }
 
-.art3_lbox2 img
-{
+.art3_lbox2 img {
   transition: .3s;
 }
 
 
-.art3_lbox2 img:hover
-{
-transform: scale(1.05);
+.art3_lbox2 img:hover {
+  transform: scale(1.05);
 }
 
 .art3_rbox2,
-.art3_rbox1
-{
+.art3_rbox1 {
   overflow: hidden;
 }
 
 .art3_rbox2 img,
-.art3_rbox1 img
-{
+.art3_rbox1 img {
   transition: .3s;
 }
 
 
 .art3_rbox2 img:hover,
-.art3_rbox1 img:hover
-{
-transform: scale(1.05);
+.art3_rbox1 img:hover {
+  transform: scale(1.05);
 }
 
 /* art3 끝 */
@@ -309,13 +391,13 @@ footer .footer_nav ul {
   top: 40px;
 }
 
-footer  .footer_nav li {
+footer .footer_nav li {
   display: inline-block;
   margin-right: 50px;
   font-size: 16px;
 }
 
-footer  .footer_nav ul li a {
+footer .footer_nav ul li a {
   text-decoration: none;
   color: #111111;
 }
@@ -361,4 +443,3 @@ footer ul li:last-child a {
 }
 
 /* footer 끝 */
-
