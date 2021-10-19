@@ -583,10 +583,15 @@ section {
 
 /* art3끝 */
 
+.fline {
+  margin-top: 50px;
+  height: 5px;
+  background-color: #1A53A4;
+}
+
 .gline {
   height: 5px;
   background-color: #1A53A4;
-  margin-top: 50px;
 }
 
 /* art4 시작 */
