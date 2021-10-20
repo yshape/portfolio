@@ -50,7 +50,7 @@
 
 .title {
   font-family: 'S-CoreDream-4Regular';
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .title_p {
@@ -76,7 +76,6 @@ header {
 header a img {}
 
 header a ul {
-  height: 100px;
 }
 
 header ul li {
@@ -102,11 +101,72 @@ header .nav_box a {
   text-decoration: none;
 }
 
+.nav {
+  position: relative;
+}
+
+.nav li::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #a06335;
+  transition: .2s;
+  box-sizing: border-box;
+  transform: translateY(10px);
+}
+
+.nav li::after {
+
+}
+
+.nav li:hover a {
+  color: #6F4424;
+}
+
+.nav li:hover::after {
+width: 100%;
+}
+
 /* 헤더 + 네비 끝 */
+
+
+/* 사이드바 */
+
+aside {
+  z-index: 3;
+  position: fixed;
+  right: 3%;
+  top: 30%;
+}
+aside input {
+  display: none;
+}
+aside label {
+  cursor: pointer;
+  position: absolute;
+  bottom: -30px;
+  left: 70px;
+}
+
+aside input:checked ~ .content {
+  display: none;
+}
+
+aside input:checked ~label {
+  display: none;
+}
+
+/* 사이드바끝 */
 
 /* 메인 시작 */
 
-
+.main {
+  height: 720px;
+  background: url(../images/main_image.png);
+}
 
 /* 메인 끝 */
 
@@ -119,17 +179,18 @@ header .nav_box a {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  
 
 }
 
 .art1 .title {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .art1 .container {
   display: flex;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .art1 li:first-child {
@@ -150,6 +211,7 @@ header .nav_box a {
 
 .art2 {
   position: relative;
+  margin-bottom: -2px;
 }
 
 
@@ -157,12 +219,13 @@ header .nav_box a {
   position: absolute;
   display: flex;
   bottom: 150px;
-  right: 497px;
+  right: 595px;
 }
 
 .btn_fbrown {
-  width: 160px;
-  height: 50px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid #6F4424;
   background-color: #6F4424;
   color: white;
   font-family: 'S-CoreDream-6Bold';
@@ -170,12 +233,12 @@ header .nav_box a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 }
 
-.btn_nbrown {
 
-  width: 160px;
-  height: 50px;
+.btn_nbrown {
+  padding: 10px 20px;
   box-sizing: border-box;
   border: 2px solid #6F4424;
   color: #6F4424;
@@ -184,9 +247,21 @@ header .nav_box a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+  margin-left: 20px;
+  border-radius: 12px;
+  transition: .2s;
 
 }
+
+.btn_nbrown:hover {
+  border: 2px solid #6F4424;
+  background-color: #6F4424;
+  color: white;
+}
+
+
+
+
 
 /* art2 끝 */
 
@@ -206,6 +281,7 @@ section {
 }
 
 section .title {
+  margin-top: 20px;
   padding-bottom: 65px;
 }
 
@@ -296,20 +372,28 @@ section .obj3>img {
 
 
 .art3_lbox3 span a {
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
-  text-decoration: underline;
   color: white;
   bottom: 50px;
   left: 48px;
-  padding: 5px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
   box-sizing: border-box;
+  transition: .2s;
+}
+
+.art3_lbox3 span a:hover {
+  background-color: white;
+  color: #571C1F;
+
 }
 
 
 .art3_rbox_sub_group {
   display: flex;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 
@@ -329,26 +413,35 @@ section .obj3>img {
 }
 
 .art3_rbox3 span a {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight:lighter;
   position: absolute;
-  text-decoration: underline;
-  color: #111111;
-  bottom: 350px;
-  left: 31px;
-  padding: 5px;
+  color: #571C1F;
+  bottom: 330px;
+  left: 112px;
+  padding: 5px 10px;
+  border: 1px solid #571C1F;
+  border-radius: 10px;
   box-sizing: border-box;
+  transition: .2s;
 }
+
+.art3_rbox3 span a:hover {
+  background-color: #571C1F;
+  color: white;
+}
+
 
 .art3_lbox2 {
   overflow: hidden;
 }
 
-.art3_lbox2 img {
+.art3_lbox2 img:first-child {
   transition: .3s;
 }
 
 
-.art3_lbox2 img:hover {
+.art3_lbox2 img:first-child:hover  {
   transform: scale(1.05);
 }
 
@@ -363,7 +456,7 @@ section .obj3>img {
 }
 
 
-.art3_rbox2 img:hover,
+.art3_rbox2 img:first-child:hover,
 .art3_rbox1 img:hover {
   transform: scale(1.05);
 }
