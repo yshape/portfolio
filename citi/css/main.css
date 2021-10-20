@@ -316,14 +316,15 @@ nav ul li a {
   margin-bottom: 36px;
   transform: translateX(1119px) translateY(514px);
   cursor: pointer;
+  opacity: .3;
 }
 
 .art2 .circle1 {
   position: absolute;
   display: block;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 14px;
   right: 640px;
   bottom: 341px;
@@ -336,8 +337,8 @@ nav ul li a {
   position: absolute;
   display: block;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 14px;
   right: 640px;
   bottom: 286px;
@@ -351,8 +352,8 @@ nav ul li a {
   position: absolute;
   display: block;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 14px;
   right: 640px;
   bottom: 232px;
@@ -380,6 +381,13 @@ nav ul li a {
   width: 780px;
   height: 529px;
 }
+
+.art2 .radio_group #tap1:checked~ .lab1 ,
+.art2 .radio_group #tap2:checked~ .lab2 ,
+.art2 .radio_group #tap3:checked~ .lab3 {
+  opacity: 1;
+}
+
 
 .art2 .radio_group #tap1:checked~.circle1 ,
 .art2 .radio_group #tap2:checked~.circle2 ,
