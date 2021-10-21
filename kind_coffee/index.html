@@ -7,7 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="./js/youtube.js"></script>
+  <script src="./js/main.js"></script>
+
   <title>더 착한커피</title>
 </head>
 
@@ -37,7 +42,8 @@
       <label for="tab1"><img src="./images/aside_close.png" alt=""></label>
       <div class="content">
         <a href="">
-          <img src="./images/aside_image.png" alt="">
+          <div class="item front"><img src="./images/aside_image.png" alt="img front" /></div>
+          <div class="item back"><img src="./images/aside_image2.png" alt="img back" /></div>
         </a>
       </div>
     </div>
@@ -46,6 +52,10 @@
   <!-- 메인 시작 -->
 
   <div class="main wrap">
+    <div class="slider">
+      <div><img src="./images/main_image.png" alt=""></div>
+      <div><img src="./images/main_image2.png" alt=""></div>
+    </div>
   </div>
 
   <!-- 메인 끝 -->
@@ -196,7 +206,9 @@
 
       <div class="art3_rbox_group">
         <div class="art3_rbox1">
-          <img src="./images/art3_right_box1.png" alt="">
+          <div class="img_box">
+            <img src="./images/coffee_gif.gif" alt="">
+          </div>
         </div>
         <div class="art3_rbox_sub_group">
           <div class="art3_rbox2">

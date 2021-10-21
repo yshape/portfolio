@@ -75,8 +75,7 @@ header {
 
 header a img {}
 
-header a ul {
-}
+header a ul {}
 
 header ul li {
   display: inline-block;
@@ -118,16 +117,14 @@ header .nav_box a {
   transform: translateY(10px);
 }
 
-.nav li::after {
-
-}
+.nav li::after {}
 
 .nav li:hover a {
   color: #6F4424;
 }
 
 .nav li:hover::after {
-width: 100%;
+  width: 100%;
 }
 
 /* 헤더 + 네비 끝 */
@@ -141,23 +138,53 @@ aside {
   right: 3%;
   top: 30%;
 }
+
 aside input {
   display: none;
 }
+
 aside label {
   cursor: pointer;
   position: absolute;
-  bottom: -30px;
-  left: 70px;
+  bottom: -40px;
+  left: 54px;
 }
 
-aside input:checked ~ .content {
+aside input:checked~.content {
   display: none;
 }
 
-aside input:checked ~label {
+aside input:checked~label {
   display: none;
 }
+
+aside .content a {
+  perspective: 500px;
+}
+
+aside .content .item {
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+aside .content .item.front {
+  position: absolute;
+  left: -9px;
+  bottom: -11px;
+}
+
+aside .content:hover .item.front {
+  transform: rotateY(180deg);
+}
+
+aside .content .item.back {
+  transform: rotateY(-180deg);
+}
+
+aside .content:hover .item.back {
+  transform: rotateY(0deg);
+}
+
 
 /* 사이드바끝 */
 
@@ -165,7 +192,11 @@ aside input:checked ~label {
 
 .main {
   height: 720px;
-  background: url(../images/main_image.png);
+}
+
+.main .slider {
+  width: 1900px;
+  height: 720px;
 }
 
 /* 메인 끝 */
@@ -179,7 +210,7 @@ aside input:checked ~label {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  
+
 
 }
 
@@ -288,6 +319,8 @@ section .title {
 section #player {
   position: relative;
   z-index: 2;
+  border-radius: 30px;
+
 }
 
 section .obj1>img {
@@ -402,6 +435,22 @@ section .obj3>img {
   flex-direction: column;
 }
 
+.art3_rbox1 {
+  width: 600px;
+  height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art3_rbox1 .img_box img {
+transform: scale(1.2);
+width: 300px;
+height: 300px;
+border-radius: 50%;
+}
+
+
 .art3_rbox2 {
   display: flex;
   margin-top: -1px;
@@ -414,11 +463,11 @@ section .obj3>img {
 
 .art3_rbox3 span a {
   font-size: 16px;
-  font-weight:lighter;
+  font-weight: lighter;
   position: absolute;
   color: #571C1F;
-  bottom: 330px;
-  left: 112px;
+  bottom: 340px;
+  left: 118px;
   padding: 5px 10px;
   border: 1px solid #571C1F;
   border-radius: 10px;
@@ -441,7 +490,7 @@ section .obj3>img {
 }
 
 
-.art3_lbox2 img:first-child:hover  {
+.art3_lbox2 img:first-child:hover {
   transform: scale(1.05);
 }
 
@@ -456,8 +505,7 @@ section .obj3>img {
 }
 
 
-.art3_rbox2 img:first-child:hover,
-.art3_rbox1 img:hover {
+.art3_rbox2 img:first-child:hover {
   transform: scale(1.05);
 }
 
@@ -518,6 +566,7 @@ footer ul li:last-child a {
   bottom: 50px;
   left: 360px;
   font-size: 14px;
+  color: #979797;
 }
 
 
