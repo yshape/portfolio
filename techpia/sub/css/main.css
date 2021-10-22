@@ -459,12 +459,19 @@ footer .top .top_box2 {
   line-height: 35px;
 }
 footer .top .top_box2 .box2_left {}
+
 footer .top .top_box2 .box2_left li {
   color: gray;
 }
+
+footer .top .top_box2 .box2_left li:hover {
+  color: rgb(65, 65, 65);
+}
+
 footer .top .top_box2 .box2_left li:first-child {
   font-size: 22px;
-  color: #343434;
+  color: #195B31;
+  font-weight: bold;
 }
 footer .top .top_box2 .box2_right {
   margin-left: 75px;
@@ -482,16 +489,21 @@ footer .top .top_box2 .box2_right li::after {
 footer .top .top_box2 .box2_right li {
   color: gray;
 }
+
+
+footer .top .top_box2 .box2_left li a:hover {
+  color: rgb(65, 65, 65);
+}
+
+footer .top .top_box2 .box2_left li a {
+  text-decoration: none;
+  color: gray;
+}
+
+
 footer .top .top_box2 .box2_right li a {
   color: #343434;
 }
-
-footer .top .top_box2 .box2_right li:first-child {
-  font-size: 16px;
-  color: #343434;
-  text-decoration: underline;
-
-} 
 
 /* 푸터 탑 부분 끝 */
 

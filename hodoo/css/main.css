@@ -72,6 +72,10 @@ a {
 
 
 /* 헤더부분 */
+
+
+
+
 header {
   display: flex;
   height: 100px;
@@ -154,6 +158,7 @@ header .nav .orange {
   position: absolute;
   left: calc(50% - 76.64px);
   bottom: -65px;
+  z-index: 3;
 
 }
 
@@ -183,9 +188,74 @@ header .nav .orange {
 /* art1 시작  */
 
 .art1 {
+  position: relative;
   height: 1613px;
   background-color: #FFF8E8;
   text-align: center;
+}
+
+.art1 .obj_1 {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  animation-name: obj1;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes obj1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.art1 .obj_2 {
+  position: absolute;
+  bottom: -150px;
+  right: -160px;
+  animation-name: obj2;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes obj2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.art1 .obj_3 {
+  position: absolute;
+  top: 742px;
+  left: -130px;
+  animation-name: obj3;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes obj3 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .art1 ul {
@@ -216,6 +286,8 @@ header .nav .orange {
   background-color: #4DBED9;
   opacity: .4;
   transition: .5s;
+  border-radius: 10px;
+
 }
 
 .art1:hover ul li:nth-child(1)::after {
@@ -295,6 +367,8 @@ header .nav .orange {
   background-color: #F8D100;
   opacity: .3;
   transition: .5s;
+  border-radius: 10px;
+
 }
 
 .art2:hover ul li:nth-child(1)::after {
@@ -438,6 +512,8 @@ header .nav .orange {
   background-color: #F8955A;
   opacity: .3;
   transition: .5s;
+  border-radius: 10px;
+
 }
 
 .art4:hover ul li:nth-child(1)::after {

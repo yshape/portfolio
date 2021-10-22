@@ -729,7 +729,8 @@ footer .top .top_box2 .box2_left li {
 }
 footer .top .top_box2 .box2_left li:first-child {
   font-size: 22px;
-  color: #343434;
+  color: #195B31;
+  font-weight: bold;
 }
 footer .top .top_box2 .box2_right {
   margin-left: 75px;
@@ -747,6 +748,18 @@ footer .top .top_box2 .box2_right li::after {
 footer .top .top_box2 .box2_right li {
   color: gray;
 }
+
+
+footer .top .top_box2 .box2_left li a:hover {
+  color: rgb(65, 65, 65);
+}
+
+footer .top .top_box2 .box2_left li a {
+  text-decoration: none;
+  color: gray;
+}
+
+
 footer .top .top_box2 .box2_right li a {
   color: #343434;
 }
