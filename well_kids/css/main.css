@@ -72,6 +72,11 @@
   height: 50px;
 }
 
+.btn_blue:hover {
+  text-decoration: underline;
+}
+
+
 .btn_white {
   position: absolute;
   line-height: 44px;
@@ -80,6 +85,11 @@
   width: 300px;
   height: 50px;
   box-sizing: border-box;
+}
+
+.btn_white:hover {
+  background-color: white;
+  color: #1669B9;
 }
 
 /* header 시작 */
@@ -120,6 +130,53 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #3A4C9F;
+}
+
+nav ul li::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #166ab9af;
+  transform: translateX(30px) translateY(-24px);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+nav ul li:nth-child(3):after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #166ab9a4;
+  transform: translateX(90px) translateY(-24px);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+
+
+nav ul li:hover::after {
+  /* display: none; */
+  transform: translateX(30px) translateY(-34px);
+  opacity: 1;
+
+
+}
+
+nav ul li:nth-child(3):hover:after {
+ /* display: none; */
+ transform: translateX(90px) translateY(-34px);
+ opacity: 1;
+
+}
+
+
 /* nav 끝 */
 
 /* main 시작 */
@@ -146,6 +203,12 @@ nav ul li a {
 .art1_box {
   position: relative;
 }
+
+.art1_box:nth-child(3),
+.art1_box:nth-child(4) {
+  margin-top: -2px;
+}
+
 
 .art1_box .arrow {
   position: absolute;
@@ -175,10 +238,12 @@ nav ul li a {
   justify-content: space-between;
 }
 
-.art2 .art2_box {}
+.art2 .art2_box {
+  opacity: .8;
+}
 
 .art2 .art2_box:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 
@@ -255,6 +320,19 @@ nav ul li a {
   
 }
 
+.notice .notice_box .notice_left .left_text1 a {
+  text-decoration: none;
+  color: #6f6f6f;
+
+}
+
+.notice .notice_box .notice_left .left_text1 a:hover {
+  color: #272727;
+
+}
+
+
+
 .notice .notice_box .notice_left .left_text1 ul {}
 
 .notice .notice_box .notice_left .left_text1 ul li {
@@ -319,6 +397,7 @@ nav ul li a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  color: #6f6f6f;
 }
 
 .foot .logo{

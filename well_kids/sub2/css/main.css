@@ -92,6 +92,52 @@ nav ul li a {
   color: #3B3B3B;
   text-decoration: none;
 }
+nav ul li a:hover {
+  color: #3A4C9F;
+}
+
+nav ul li::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #166ab9af;
+  transform: translateX(30px) translateY(-24px);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+nav ul li:nth-child(3):after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #166ab9a4;
+  transform: translateX(90px) translateY(-24px);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+
+
+nav ul li:hover::after {
+  /* display: none; */
+  transform: translateX(30px) translateY(-34px);
+  opacity: 1;
+
+
+}
+
+nav ul li:nth-child(3):hover:after {
+ /* display: none; */
+ transform: translateX(90px) translateY(-34px);
+ opacity: 1;
+
+}
+
 
 /* nav 끝 */
 
@@ -288,6 +334,8 @@ nav ul li a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  color: #6f6f6f;
+
 }
 
 .foot .logo{

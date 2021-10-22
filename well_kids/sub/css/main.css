@@ -85,6 +85,51 @@ nav ul li a {
   color: #3B3B3B;
   text-decoration: none;
 }
+nav ul li a:hover {
+  color: #3A4C9F;
+}
+
+nav ul li::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #166ab9af;
+  transform: translateX(30px) translateY(-24px);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+nav ul li:nth-child(3):after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #166ab9a4;
+  transform: translateX(90px) translateY(-24px);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+
+
+nav ul li:hover::after {
+  /* display: none; */
+  transform: translateX(30px) translateY(-34px);
+  opacity: 1;
+
+
+}
+
+nav ul li:nth-child(3):hover:after {
+ /* display: none; */
+ transform: translateX(90px) translateY(-34px);
+ opacity: 1;
+
+}
 
 /* nav 끝 */
 
@@ -189,6 +234,8 @@ nav ul li a {
   display: flex;
   margin-top: 100px;
   margin-left: 40px;
+  height: 350px;
+
 }
 
 .art1_box .right {
@@ -196,6 +243,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
+  margin-top: 6px;
 }
 
 .art1_box .right .text {
@@ -220,8 +268,15 @@ nav ul li a {
 .art1_box .right .text ul li:nth-child(2) {
   color: #1689FC;
   margin-bottom: 10px;
+  font-weight: bold;
 
 }
+
+.art1_box .right .text ul li:nth-child(3) {
+  font-family: 'S-CoreDream-4Regular';
+}
+
+
 
 
 .art1_box .right .table table {
@@ -230,6 +285,7 @@ nav ul li a {
   text-align: center;
   font-size: 14px;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .art1_box .right .table table td {
@@ -260,6 +316,7 @@ nav ul li a {
 .art1_box .right .btn_g {
   display: flex;
   text-align: center;
+  margin-top: 8px;
 }
 
 .art1_box .right .btn_g .btn {
@@ -279,7 +336,7 @@ nav ul li a {
 }
 
 .art1_box .right .btn_g a {
-  color: #3B3B3B;
+  color: black;
 }
 
 
@@ -306,6 +363,8 @@ nav ul li a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  color: #6f6f6f;
+
 }
 
 .foot .logo{
