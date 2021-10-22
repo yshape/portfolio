@@ -19,7 +19,10 @@
 }
 
 
-
+.fixed {
+  position: fixed;
+  z-index: -1;
+}
 
 /* 공통부분 */
 
@@ -196,7 +199,6 @@ a {
   font-size: 16px;
 }
 
-
 .main .nav_left {}
 
 .main .nav_left ul {
@@ -211,7 +213,7 @@ a {
 
 .main .nav_left ul li a {
   font-family: 'ChosunSm';
-  font-size: 25px;
+  font-size: 22px;
   color: white;
 }
 
@@ -230,7 +232,7 @@ a {
 
 .main .nav_right ul li a {
   font-family: 'ChosunSm';
-  font-size: 25px;
+  font-size: 22px;
   color: white;
 }
 
@@ -262,8 +264,13 @@ a {
 .art1 .text_g1 {
   position: absolute;
   top: 160px;
-  right: 550px;
+  right: 525px;
 }
+
+.art1 .text_g1 ul li:first-child {
+  letter-spacing: -2px;
+}
+
 
 .art1 .text_g2 {
   position: absolute;
@@ -285,7 +292,11 @@ a {
 .art2 .text_g1 {
   position: absolute;
   top: 154px;
-  left: 520px;
+  left: 502px;
+}
+
+.art2 .text_g1 ul li:first-child {
+  letter-spacing: -2px;
 }
 
 .art2 .text_g3 {
@@ -322,7 +333,7 @@ a {
 
 .art3 {
   position: relative;
-  margin-top: -2px;
+  top: -2px;
   height: 1425px;
   background-image: url(../images/art3_image.png);
 }
@@ -406,7 +417,8 @@ a {
 
 .art4 {
   z-index: 2;
-
+top: -2px;
+left: 0px;
   position: relative;
   background: url(../images/art4_image.png) center no-repeat;
   height: 1250px;

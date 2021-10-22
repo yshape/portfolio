@@ -133,7 +133,7 @@ header .logo_box {
 
 header .nav {
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 190px;
   margin-top: 20px;
 
 }
@@ -279,11 +279,14 @@ header .nav .orange {
 
 .art1 .step_box .text ul li span:nth-child(1) {
   font-size: 30px;
+  font-weight: bold;
+
 }
 
 .art1 .step_box .text ul li span:nth-child(2) {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
+  color: #707070;
 }
 
 .art1 .step_box .text ul li .point {

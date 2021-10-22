@@ -400,7 +400,7 @@ section .obj3>img {
 
 .art3_lbox3 {
   position: relative;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 
 
@@ -548,8 +548,14 @@ footer ul li:last-child a {
 }
 
 
+.leaf {
+  position: absolute;
+  right: 363px;
+  top: -24.3px;
+}
 
 .line {
+  z-index: 2;
   display: block;
   content: "";
   height: 5px;
