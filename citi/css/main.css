@@ -45,7 +45,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
   border-radius: 0px 0px 30px 30px;
   background-color: rgba(255, 255, 255, 0.563);
   z-index: 5;
@@ -368,7 +367,7 @@ nav ul li a:hover {
   border-radius: 14px;
   right: 640px;
   bottom: 341px;
-  display: none;
+  visibility: hidden;
   transition: .3s;
   opacity: 0;
 }
@@ -382,7 +381,7 @@ nav ul li a:hover {
   border-radius: 14px;
   right: 640px;
   bottom: 286px;
-  display: none;
+  visibility: hidden;
   opacity: 0;
   transition: .3s;
 
@@ -397,7 +396,7 @@ nav ul li a:hover {
   border-radius: 14px;
   right: 640px;
   bottom: 232px;
-  display: none;
+  visibility: hidden;
   opacity: 0;
   transition: .3s;
 
@@ -409,14 +408,15 @@ nav ul li a:hover {
 }
 
 .art2 .radio_group .img_box {
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 234px;
   bottom: 221px;
+  transition: .4s;
 }
 
 .art2 .radio_group #tap1:checked~.img_box {
-  display: block;
+  visibility: visible;
   background: url(../image/art3_img1.png) no-repeat;
   width: 780px;
   height: 529px;
@@ -432,20 +432,20 @@ nav ul li a:hover {
 .art2 .radio_group #tap1:checked~.circle1 ,
 .art2 .radio_group #tap2:checked~.circle2 ,
 .art2 .radio_group #tap3:checked~.circle3 {
-  display: block;
+  visibility: visible;
   background-color: white;
   opacity: 1;
 }
 
 .art2 .radio_group #tap2:checked~.img_box {
-  display: block;
+  visibility: visible;
   background: url(../image/art3_img2.png) no-repeat;
   width: 780px;
   height: 529px;
 }
 
 .art2 .radio_group #tap3:checked~.img_box {
-  display: block;
+  visibility: visible;
   background: url(../image/art3_img3.png) no-repeat;
   width: 780px;
   height: 529px;
