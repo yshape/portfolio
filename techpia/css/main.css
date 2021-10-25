@@ -76,8 +76,9 @@
 }
 
 .gline {
+  margin-top: 100px;
   width: 100%;
-  height: 30px;
+  height: 5px;
   background-color: #E9E9E9;
   position: relative;
 }
@@ -293,57 +294,66 @@ nav ul a li:hover {
 
 }
 
-.art3 .container {
+.art3_swiper {
+  position: relative;
+  width: 1200px;
+  height: 560px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: flex-start;
 }
 
-.art3 .container .items {}
-
-.art3 .container .items img {}
-
-.art3 .container .items p {}
-
-.art3 .container .items ul {}
-
-.art3 .container .items ul li {
-  font-size: 12px;
-
-}
-
-.art3 .container .items ul li:nth-child(1) {
-  margin-top: 25px;
-  font-size: 16px;
-}
-
-.art3 .container .items ul li:nth-child(2) {
-  margin-top: 11px;
-  font-size: 13px;
-  color: #343434;
-  line-height: 18px;
-}
-
-.art3 .container .items ul li:nth-child(3) {
-  margin-top: 20px;
-}
-
-.art3 .right_arrow {
+.swiper-slide .text {
   position: absolute;
-  right: -100px;
-  bottom: 35%;
-  cursor: pointer;
-  padding: 20px;
+  left: 10px;
+  bottom: 20px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 14px
+  
+}
+.swiper-slide > a {
+  overflow: hidden;
+}
+.swiper-slide > img {
+  display: block;
+  width: 380px;
+  height: 400px;
+  object-fit: cover;
 }
 
-.art3 .left_arrow {
-  position: absolute;
-  left: -100px;
-  bottom: 35%;
-  cursor: pointer;
-  padding: 20px;
+.swiper-slide > a > img:hover {
+  transform: scale(1.05);
+  transition: .3s;
+
 }
 
 
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #195B31;
+  transform: scale(1.0) translateY(10px);
+  
+
+}
 
 /* art3 끝 */
 
