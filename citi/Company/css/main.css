@@ -168,6 +168,7 @@ footer {
 
 .art2 .info:hover {
   background: url(../images/info_ficon.png);
+  cursor: help;
 }
 
 

@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="/total/font.css">
-  <style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  </style>
+  <script defer src="./js/main.js">
+
+  </script>
 </head>
 
 <body>
@@ -80,330 +82,407 @@
   <!-- main 끝 -->
   <!-- 라디오 시작 -->
 
-  <div class="radio inner ">
+  <div id="container">
+
+    <ul class="tab">
+      <li class="current" data-tab="tab1"><a href="#">의료진 소개</a></li>
+      <li data-tab="tab2"><a href="#">진료예약 방법</a></li>
+    </ul>
+
+    <div id="tab1" class="tabcontent current">
+      <div class="art1 inner">
 
 
-    <a class="item" href="">
-      <div>
-        <span>의료진 소개</span>
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box1_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>김지원 과장 <span>[소화기 내과2]</span></li>
+                <li>전문진료분야</li>
+                <li>역류성 식도염, 위궤양, 십이지장과, 기능성소화불량 ,변비</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td></td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box2_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>심영광 과장 <span>[소화기 내과1]</span></li>
+                <li>전문진료분야</li>
+                <li>위장관 질환, 간담도 질환, 위 내시경, 식도 질환, 위 십이지장 질환, 역류성 식도염, 소화성 궤양</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box3_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>유준호 과장 <span>[순환기 내과1]</span></li>
+                <li>전문진료분야</li>
+                <li>부정맥, 동맥경화, 심혈관질환, 고지혈증 , 고혈압</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box4_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>양세정 과장 <span>[내분비 내과2]</span></li>
+                <li>전문진료분야</li>
+                <li>당뇨병, 대사증후군, 갑상선암, 갑상선 결절, 골다공증, 부신 질환</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+
+
+
+
+
+
       </div>
-    </a>
+    </div>
 
-    <a class="item" href="../sub2/index.html">
-      <div>
-        <span>진료예약 방법</span>
+    <div id="tab2" class="tabcontent">
+      <!-- art1 시작 -->
+
+
+      <div class="sub_art1 inner">
+        <div class="text">
+          <ul>
+            <li>웰키즈만의 목표를 세우며 치료 방법을 개선해 나갑니다.</li>
+            <li>청소년에 맞는 접근법을 이용해여 다양하고 조절된 신체 움직임에 따라 적절한 긴장도를 유지하고 정상적인 움직임을 학습시킵니다.<br>
+              기능적 활동과 균형능력 정도를 분석하여 운동치료법과 함께 치료를 하여 치료 후에도 효과적이고 기능적인 유지 및 개선을 할 수 있도록<br>
+              치료하는것에 중점을 두고 있습니다.</li>
+          </ul>
+        </div>
       </div>
-    </a>
+
+      <!-- art1 끝 -->
+
+      <div class="gline inner">
+
+      </div>
+
+      <!-- art2 시작 -->
+
+
+
+      <div class="sub_art2 inner">
+        <div class="text">
+          <span>입원절차 안내</span>
+        </div>
+        <div class="img">
+          <img src="./images/l_art2_image.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- art2 끝 -->
+
+      <div class="gline inner">
+
+      </div>
+
+      <!-- art3시작 -->
+
+
+      <div class="sub_art3 inner">
+        <div class="text">
+          <span>운영 시간</span>
+        </div>
+        <div class="img">
+          <img src="./images/l_art3_image.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- art3끝 -->
+
+      <div class="gline inner">
+
+      </div>
+
+      <!-- art4시작 -->
+
+
+      <div class="sub_art4 inner">
+        <div class="text">
+          <span>문의 전화 및 팩스</span>
+        </div>
+        <div class="img">
+          <img src="./images/l_art4_image.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- art4끝 -->
+    </div>
+
+    
   </div>
 
   <!-- 라디오 끝 -->
 
   <!-- art1 닥터그룹 시작 -->
-  <div class="art1 inner">
 
-
-
-    <!-- 박스1 시작 -->
-    <div class="art1_box">
-
-      <div class="left">
-        <img src="./images/art1_box1_image.png" alt="">
-      </div>
-
-
-
-      <div class="right">
-
-        <div class="text">
-          <ul>
-            <li>김지원 과장 <span>[소화기 내과2]</span></li>
-            <li>전문진료분야</li>
-            <li>역류성 식도염, 위궤양, 십이지장과, 기능성소화불량 ,변비</li>
-          </ul>
-        </div>
-
-        <div class="table">
-          <table>
-
-            <tr>
-              <td></td>
-              <td>월</td>
-              <td>화</td>
-              <td>수</td>
-              <td>목</td>
-              <td>금</td>
-              <td>토</td>
-            </tr>
-
-            <tr>
-              <td>오전</td>
-              <td></td>
-              <td></td>
-              <td>●</td>
-              <td>●</td>
-              <td>●</td>
-              <td>●</td>
-            </tr>
-
-            <tr>
-              <td>오후</td>
-              <td>●</td>
-              <td>●</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-          </table>
-
-        </div>
-
-        <div class="btn_g">
-          <a href="">
-            <div class="btn">
-              이력 자세히 보기
-            </div>
-          </a>
-          <a href="">
-            <div class="btn">
-              의료진 인사말
-
-            </div>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-    <!-- 박스 1 끝 -->
-
-    <!-- 박스1 시작 -->
-    <div class="art1_box">
-
-      <div class="left">
-        <img src="./images/art1_box2_image.png" alt="">
-      </div>
-
-
-
-      <div class="right">
-
-        <div class="text">
-          <ul>
-            <li>심영광 과장 <span>[소화기 내과1]</span></li>
-            <li>전문진료분야</li>
-            <li>위장관 질환, 간담도 질환, 위 내시경, 식도 질환, 위 십이지장 질환, 역류성 식도염, 소화성 궤양</li>
-          </ul>
-        </div>
-
-        <div class="table">
-          <table>
-
-            <tr>
-              <td></td>
-              <td>월</td>
-              <td>화</td>
-              <td>수</td>
-              <td>목</td>
-              <td>금</td>
-              <td>토</td>
-            </tr>
-
-            <tr>
-              <td>오전</td>
-              <td>●</td>
-              <td>●</td>
-              <td>●</td>
-              <td></td>
-              <td>●</td>
-              <td></td>
-            </tr>
-
-            <tr>
-              <td>오후</td>
-              <td>●</td>
-              <td>●</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-          </table>
-
-        </div>
-
-        <div class="btn_g">
-          <a href="">
-            <div class="btn">
-              이력 자세히 보기
-            </div>
-          </a>
-          <a href="">
-            <div class="btn">
-              의료진 인사말
-
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- 박스 1 끝 -->
-
-    <!-- 박스1 시작 -->
-    <div class="art1_box">
-
-      <div class="left">
-        <img src="./images/art1_box3_image.png" alt="">
-      </div>
-
-
-
-      <div class="right">
-
-        <div class="text">
-          <ul>
-            <li>유준호 과장 <span>[순환기 내과1]</span></li>
-            <li>전문진료분야</li>
-            <li>부정맥, 동맥경화, 심혈관질환, 고지혈증 , 고혈압</li>
-          </ul>
-        </div>
-
-        <div class="table">
-          <table>
-
-            <tr>
-              <td></td>
-              <td>월</td>
-              <td>화</td>
-              <td>수</td>
-              <td>목</td>
-              <td>금</td>
-              <td>토</td>
-            </tr>
-
-            <tr>
-              <td>오전</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>●</td>
-              <td>●</td>
-              <td>●</td>
-            </tr>
-
-            <tr>
-              <td>오후</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>●</td>
-              <td>●</td>
-              <td>●</td>
-            </tr>
-
-          </table>
-
-        </div>
-
-        <div class="btn_g">
-          <a href="">
-            <div class="btn">
-              이력 자세히 보기
-            </div>
-          </a>
-          <a href="">
-            <div class="btn">
-              의료진 인사말
-
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- 박스 1 끝 -->
-
-    <!-- 박스1 시작 -->
-    <div class="art1_box">
-
-      <div class="left">
-        <img src="./images/art1_box4_image.png" alt="">
-      </div>
-
-
-
-      <div class="right">
-
-        <div class="text">
-          <ul>
-            <li>양세정 과장 <span>[내분비 내과2]</span></li>
-            <li>전문진료분야</li>
-            <li>당뇨병, 대사증후군, 갑상선암, 갑상선 결절, 골다공증, 부신 질환</li>
-          </ul>
-        </div>
-
-        <div class="table">
-          <table>
-
-            <tr>
-              <td></td>
-              <td>월</td>
-              <td>화</td>
-              <td>수</td>
-              <td>목</td>
-              <td>금</td>
-              <td>토</td>
-            </tr>
-
-            <tr>
-              <td>오전</td>
-              <td></td>
-              <td>●</td>
-              <td>●</td>
-              <td></td>
-              <td>●</td>
-              <td></td>
-            </tr>
-
-            <tr>
-              <td>오후</td>
-              <td>●</td>
-              <td>●</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-          </table>
-
-        </div>
-
-        <div class="btn_g">
-          <a href="">
-            <div class="btn">
-              이력 자세히 보기
-            </div>
-          </a>
-          <a href="">
-            <div class="btn">
-              의료진 인사말
-
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- 박스 1 끝 -->
-
-
-
-
-
-
-
-  </div>
   <!-- art1 닥터그룹 끝 -->
 
   <!-- 푸터 시작 -->

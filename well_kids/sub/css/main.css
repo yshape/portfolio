@@ -85,6 +85,7 @@ nav ul li a {
   color: #3B3B3B;
   text-decoration: none;
 }
+
 nav ul li a:hover {
   color: #3A4C9F;
 }
@@ -108,7 +109,7 @@ nav ul li:nth-child(3):after {
   width: 30px;
   height: 3px;
   background-color: #166ab9a4;
-  transform: translateX(80px) translateY(-22px)  rotateY(0deg);
+  transform: translateX(80px) translateY(-22px) rotateY(0deg);
   transition: .3s;
   border-radius: 10px;
   opacity: 0;
@@ -126,9 +127,9 @@ nav ul li:hover::after {
 }
 
 nav ul li:nth-child(3):hover:after {
- /* display: none; */
- transform: translateX(80px) translateY(-32px) rotateY(180deg);
- opacity: 1;
+  /* display: none; */
+  transform: translateX(80px) translateY(-32px) rotateY(180deg);
+  opacity: 1;
 
 }
 
@@ -181,43 +182,6 @@ nav ul li:nth-child(3):hover:after {
 
 /* 타이틀 끝 */
 
-.radio {
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.radio .left {
-  height: 45px;
-  background-color: #F8F8F8;
-  width: 600px;
-  line-height: 45px;
-}
-
-
-
-.radio .item {
-  color: #3B3B3B;
-  height: 45px;
-  background-color: #F8F8F8;
-  width: 600px;
-  line-height: 45px;
-  transition: .3s;
-  font-size: 16px;
-}
-
-.radio .item:nth-child(1) {
-  background-color: #00D7D3;
-}
-
-.radio .item:nth-child(2):hover {
-  background-color: #00D7D3;
-
-}
-
-/* 닥터그룹 시작 */
-
 
 
 
@@ -225,11 +189,84 @@ nav ul li:nth-child(3):hover:after {
 
 /* 닥터그룹 끝 */
 
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container a {
+  color: black;
+}
+
+.tab {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tab li {
+  border-top: 1px solid rgb(179, 179, 179);
+  border-bottom: 1px solid rgb(179, 179, 179);
+  width: 600px;
+  float: left;
+  cursor: pointer;
+  font-family: 'S-CoreDream-5Medium';
+
+}
+
+.tab li:hover {
+  background-color: #00D7D3;
+}
+
+
+.tab li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 0px;
+  font-size: 17px;
+  transition: 0.3s;
+  border-bottom: 0;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+ul.tab>li.current {
+  background-color: #00D7D3;
+  border-bottom: 2px solid #019c9a;
+  box-sizing: border-box;
+}
+
+ul.tab>li.current a {
+  color: black;
+}
+
+.tabcontent.current {
+  display: block;
+}
+
+.gline {
+  width: 1140px;
+  height: 1px;
+  background-color: #E9E9E9;
+  margin-top: 100px;
+}
+
 /* art1 시작 */
 
 .art1 {
   display: flex;
   flex-direction: column;
+  transform: translateX(50px);
 }
 
 .art1_box {
@@ -309,7 +346,7 @@ nav ul li:nth-child(3):hover:after {
 }
 
 
-.art1_box .right .table table tr:nth-child(2) td:not(:first-child), 
+.art1_box .right .table table tr:nth-child(2) td:not(:first-child),
 .art1_box .right .table table tr:nth-child(3) td:not(:first-child) {
   color: #00D7D3
 }
@@ -347,8 +384,105 @@ nav ul li:nth-child(3):hover:after {
 
 }
 
+.sub_art1 {
+  transform: translateX(60px);
+
+  text-align: left;
+  position: relative;
+}
+
+.sub_art1 .text {
+  margin-top: 150px;
+  margin-left: 30px;
+}
+
+.sub_art1 .text ul {}
+
+.sub_art1 .text ul li {}
+
+.sub_art1 .text ul li:nth-child(1) {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.sub_art1 .text ul li:nth-child(2) {
+  font-family: 'S-CoreDream-4Regular';
+  font-size: 16px;
+  line-height: 35px;
+  color: #707070;
+}
 
 
+/* art1 끝 */
+
+
+
+/* art2 시작 */
+.sub_art2 {
+  transform: translateX(60px);
+
+  display: flex;
+}
+
+.sub_art2 .text {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.sub_art2 .img {
+  margin-top: 50px;
+  margin-left: 100px;
+
+}
+
+
+/* art2 끝 */
+
+/* art3 시작 */
+.sub_art3 {
+  transform: translateX(60px);
+
+  display: flex;
+}
+
+.sub_art3 .text {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.sub_art3 .img {
+  margin-top: 50px;
+  margin-left: 138px;
+
+}
+
+
+/* art3 끝 */
+
+
+/* art4 시작 */
+.sub_art4 {
+  transform: translateX(60px);
+
+  display: flex;
+}
+
+.sub_art4 .text {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.sub_art4 .img {
+  margin-top: 50px;
+  margin-left: 138px;
+
+}
+
+
+/* art3 끝 */
 
 
 
@@ -369,12 +503,14 @@ nav ul li:nth-child(3):hover:after {
 
 }
 
-.foot .logo{
+.foot .logo {
   margin-top: 20px;
 }
+
 .foot p {
   margin-top: 20px;
 }
+
 .foot .adress {
   font-weight: 700;
 }
@@ -398,6 +534,7 @@ nav ul li:nth-child(3):hover:after {
 .foot span {
   margin: 0 20px;
 }
+
 .foot .last {
   margin-right: 0;
 }
