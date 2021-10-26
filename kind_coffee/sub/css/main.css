@@ -56,6 +56,33 @@ header .nav_box a {
 
 /* 헤더 + 네비 끝 */
 
+.nav {
+  position: relative;
+  top: 11px;
+}
+
+.nav li::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #a06335;
+  transition: .2s;
+  box-sizing: border-box;
+  transform: translateY(10px);
+}
+
+.nav li::after {}
+
+.nav li:hover a {
+  color: #6F4424;
+}
+
+.nav li:hover::after {
+  width: 100%;
+}
 
 
 

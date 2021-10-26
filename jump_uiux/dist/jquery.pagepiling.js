@@ -21,7 +21,7 @@
         //Defines the delay to take place before being able to scroll to the next section
         //BE CAREFUL! Not recommened to change it under 400 for a good behavior in laptops and
         //Apple devices (laptops, mouses...)
-        var scrollDelay = 0;
+        var scrollDelay = 100;
 
         // Create some defaults, extending them with any options that were provided
         var options = $.extend(true, {

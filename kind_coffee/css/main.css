@@ -118,6 +118,7 @@ header .nav_box a {
 
 .nav {
   position: relative;
+  top: 12px;
 }
 
 .nav li::after {

@@ -128,7 +128,7 @@
   color: white;
 }
 
-.main .nav_right li:first-child  {
+.main .nav_right li:first-child {
   color: white;
   text-decoration: underline;
 
@@ -187,7 +187,7 @@
 }
 
 .art1 .container1 .box:hover>.obj {
-  transform: translateX(-74px) ;
+  transform: translateX(-74px);
 }
 
 .art1 .container1 .box .text a {
@@ -348,10 +348,10 @@
   bottom: 170px;
   opacity: 0.3;
   transition: .3s;
-  
+
 }
 
-.art3 .container1 .box img:hover ~ .obj {
+.art3 .container1 .box img:hover~.obj {
   opacity: 1;
   transform: scale(1.02);
 }
@@ -414,10 +414,10 @@
   bottom: 170px;
   opacity: 0.3;
   transition: .3s;
-  
+
 }
 
-.art3 .container2 .box img:hover ~ .obj {
+.art3 .container2 .box img:hover~.obj {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -438,7 +438,183 @@
 /* art4 시작 */
 
 
+.art4 {
+  text-align: center;
+  margin-top: 100px;
 
+}
+
+.art4 label {
+  padding: 7px 25px;
+  border: 1px solid #963f37;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #4E3836;
+  transition: .3s;
+}
+
+.art4 label:hover {
+  color: white;
+  background-color: #963f37;
+}
+
+
+.art4 input {
+  display: none;
+}
+
+.art4 input:checked ~ .more {
+  display: block;
+}
+
+.art4 input:checked ~ label {
+  display: none;
+}
+
+
+.art4 .more {
+  display: none;
+  margin-top: 50px;
+}
+
+
+/* 아트 4 컨테이너1 시작 */
+
+
+.art4 .container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art4 .container1 .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center
+}
+
+.art4 .container1 .box .text {
+  margin-top: 170px;
+}
+
+.art4 .container1 .box .text ul {}
+
+.art4 .container1 .box .text ul li:nth-child(1) {
+  font-family: 'ChosunSm';
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ce5a4f;
+  padding-bottom: 10px;
+}
+
+.art4 .container1 .box .text ul li:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+}
+
+
+.art4 .container1 .box .text ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
+
+.art4 .container1 .box .obj {
+  position: absolute;
+  bottom: 170px;
+  opacity: 0.3;
+  transition: .3s;
+
+}
+
+.art4 .container1 .box img:hover~.obj {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.art4 .container1 .box .obj:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* 아트 4 컨테이너2 시작 */
+
+.art4 .container2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.art4 .container2 .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center
+}
+
+.art4 .container2 .box .text {
+  margin-top: 170px;
+}
+
+.art4 .container2 .box .text ul {}
+
+.art4 .container2 .box .text ul li:nth-child(1) {
+  font-family: 'ChosunSm';
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #963f37;
+  padding-bottom: 10px;
+}
+
+.art4 .container2 .box .text ul li:nth-child(2) {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+}
+
+
+.art4 .container2 .box .text ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E3836;
+}
+
+
+.art4 .container2 .box .obj {
+  position: absolute;
+  bottom: 170px;
+  opacity: 0.3;
+  transition: .3s;
+
+}
+
+.art4 .container2 .box img:hover~.obj {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.art4 .container2 .box .obj:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  cursor: pointer;
+
+}
 /* art4 끝 */
 
 
@@ -514,7 +690,7 @@
 .footer .box1 li:nth-child(2) {
   font-size: 42px;
   font-family: 'ChosunSm';
-} 
+}
 
 
 /* 박스 2,3 공통 */
