@@ -28,7 +28,6 @@
 .wrap {
   font-size: 18px;
   font-weight: normal;
-
   font-family: 'HangeulNuri-Bold';
   width: 1900px;
   margin: 0 auto;
@@ -97,14 +96,14 @@ nav ul li a:hover {
 
 .main {
   position: relative;
-  height: 880px;
+  height: 900px;
   background: url(../image/main_image.png);
 }
 
 .main .obj {
   position: absolute;
   left: calc(50% - 3px);
-  bottom: 58px;
+  bottom: 55px;
   animation-name: scrolling;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -296,9 +295,11 @@ nav ul li a:hover {
 
 
 .art2 {
+  width: 1900px;
   height: 870px;
   background: url(../image/art2_bgimg.png);
   position: relative;
+  overflow: hidden;
 }
 
 .art2 .sub_text {
