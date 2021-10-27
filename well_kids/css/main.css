@@ -187,7 +187,7 @@ nav ul li:nth-child(3):hover:after {
 
 .main .main_btn {
   position: absolute;
-  right: 390px;
+  left: calc(50% - 95px);
   bottom: 100px;
 }
 

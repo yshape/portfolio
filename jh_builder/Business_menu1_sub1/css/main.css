@@ -206,7 +206,7 @@ nav .sub {
 }
 
 nav .sub li {
-  font-size: 16px;
+  font-size: 14px;
   padding: 20px 0;
   text-align: center;
   background-color: #1A53A4;
@@ -326,6 +326,7 @@ nav input:focus {
   height: 592px;
   background-image: url(../images/art1_bgimage.png);
   position: relative;
+  margin-bottom: 50px;
 }
 
 .art1 .title_box {
@@ -343,6 +344,38 @@ nav input:focus {
 /* art1 끝 */
 
 
+/* timeline 시작 */
+
+.timeline_total {
+  width: 1900px;
+  display: flex;
+  align-items: center;
+  height: 700PX;
+  position: relative;
+  font-size: 20px;
+  
+  /* background: #868686; */
+}
+
+.timeline_total .title {
+  position: absolute;
+  left: 489px;
+  top: 80px;
+}
+
+.timeline-dots li {
+  transform: translateX(-30px);
+}
+
+
+
+/* timeline 끝 */
+
+
+
+
+
+
 /* art2 시작 */
 
 
@@ -353,6 +386,9 @@ nav input:focus {
 
 
 /* art2 끝 */
+
+
+
 
 
 /* art3 시작 */

@@ -45,6 +45,11 @@ header ul li:not(:first-child) {
   margin-left: 75px;
 }
 
+header .nav_box {
+  transform: translateY(10px);
+}
+
+
 header .nav_box a {
   background-color: #231F20;
   padding: 6px 36px;
@@ -88,7 +93,13 @@ header .nav_box a {
 
 /* content1 시작 */
 
+/* main시작 */
 
+.main {
+  margin-top: 11px;
+}
+
+/* main끝 */
 
 /* art1 시작 */
 

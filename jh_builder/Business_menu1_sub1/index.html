@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./js/timeline.js"></script>
+  <link rel="stylesheet" href="./css/timeline.css">
   <title>진흥건설 / 기업정보</title>
 </head>
 
@@ -29,11 +32,14 @@
   <!-- 헤더 끝 -->
 
   <aside>
-    <a href="">    <div class="item"><img src="./images/aside1.png" alt=""></div>
+    <a href="">
+      <div class="item"><img src="./images/aside1.png" alt=""></div>
     </a>
-    <a href="">    <div class="item"><img src="./images/aside2.png" alt=""></div>
+    <a href="">
+      <div class="item"><img src="./images/aside2.png" alt=""></div>
     </a>
-    <a href="">    <div class="item"><img src="./images/aside3.png" alt=""></div>
+    <a href="">
+      <div class="item"><img src="./images/aside3.png" alt=""></div>
     </a>
   </aside>
 
@@ -42,53 +48,99 @@
   <nav class="wrap">
     <ul>
       <li class="main">
-        <a class="first"  href="">사업분야</a>
+        <a class="first" href="">사업분야</a>
         <ul class="sub">
-          <a href=""><li>기업정보</li></a>
-          <a href=""><li>CEO</li></a>
-          <a href=""><li>VISION</li></a>
-          <a href=""><li>연혁</li></a>
-          <a href=""><li>주요사업</li></a>
+          <a href="">
+            <li>기업정보</li>
+          </a>
+          <a href="">
+            <li>CEO</li>
+          </a>
+          <a href="">
+            <li>VISION</li>
+          </a>
+          <a href="">
+            <li>연혁</li>
+          </a>
+          <a href="">
+            <li>주요사업</li>
+          </a>
         </ul>
       </li>
       <li class="main">
         <a class="first" href="">홍보센터</a>
         <ul class="sub">
-          <a href=""><li>웹진</li></a>
-          <a href=""><li>영상 홍보관</li></a>
-          <a href=""><li>진흥 뉴스</li></a>
-          <a href=""><li>브로슈어</li></a>
-          <a href=""><li>보도자료</li></a>
+          <a href="">
+            <li>웹진</li>
+          </a>
+          <a href="">
+            <li>영상 홍보관</li>
+          </a>
+          <a href="">
+            <li>진흥 뉴스</li>
+          </a>
+          <a href="">
+            <li>브로슈어</li>
+          </a>
+          <a href="">
+            <li>보도자료</li>
+          </a>
         </ul>
       </li>
       <li class="main">
-        <a class="first"  href="">인재채용</a>
+        <a class="first" href="">인재채용</a>
         <ul class="sub">
-          <a href=""><li>공개채용</li></a>
-          <a href=""><li>인재개발원</li></a>
-          <a href=""><li>일반사항</li></a>
+          <a href="">
+            <li>공개채용</li>
+          </a>
+          <a href="">
+            <li>인재개발원</li>
+          </a>
+          <a href="">
+            <li>일반사항</li>
+          </a>
         </ul>
 
       </li>
       <li class="main">
-        <a class="first"  href="">고객센터</a>
+        <a class="first" href="">고객센터</a>
         <ul class="sub">
-          <a href=""><li>고객상담실</li></a>
-          <a href=""><li>공익신고</li></a>
-          <a href=""><li>전자신문고</li></a>
-          <a href=""><li>시설개방 안내</li></a>
-          <a href=""><li>입찰정보</li></a>
+          <a href="">
+            <li>고객상담실</li>
+          </a>
+          <a href="">
+            <li>공익신고</li>
+          </a>
+          <a href="">
+            <li>전자신문고</li>
+          </a>
+          <a href="">
+            <li>시설개방 안내</li>
+          </a>
+          <a href="">
+            <li>입찰정보</li>
+          </a>
         </ul>
 
       </li>
       <li class="main">
         <a class="first" href="">전자사보</a>
         <ul class="sub">
-          <a href=""><li>정보공개제도</li></a>
-          <a href=""><li>사전정보공표</li></a>
-          <a href=""><li>법무</li></a>
-          <a href=""><li>사규</li></a>
-          <a href=""><li>사업실명제</li></a>
+          <a href="">
+            <li>정보공개제도</li>
+          </a>
+          <a href="">
+            <li>사전정보공표</li>
+          </a>
+          <a href="">
+            <li>법무</li>
+          </a>
+          <a href="">
+            <li>사규</li>
+          </a>
+          <a href="">
+            <li>사업실명제</li>
+          </a>
         </ul>
 
       </li>
@@ -172,15 +224,44 @@
   <!-- art1 끝 -->
 
 
+  <!-- timeline 시작 -->
+  <div class="timeline_total inner">
+    <div class="title">
+      '진흥기업 연혁'
+    </div>
+    <div class="timeline-container timeline-theme-1">
+      <div class="timeline js-timeline">
+        <div data-time="1968">
+          <img src="./images/1968_history.png" alt="">
+        </div>
+        <div data-time="1988">
+          <img src="./images/1988_history.png" alt="">
+        </div>
+        <div data-time="1996">
+          <img src="./images/1996_history.png" alt="">
+        </div>
+        <div data-time="2009">
+          <img src="./images/2009_history.png" alt="">
+        </div>
+        <div data-time="2019">
+          <img src="./images/2019_history.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('.js-timeline').Timeline();
+    </script>
+  </div>
+  <!-- timeline 끝 -->
+
   <!-- art2 시작 -->
 
 
+<div class="art2 wrap">
 
-  <div class="art2 wrap">
+</div>
 
-    <!-- 설립년도 이미지 백그라운드로 들어갔음 -->
-
-  </div>
 
 
   <!-- art2 끝 -->
