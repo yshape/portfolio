@@ -221,7 +221,7 @@ nav ul a li:hover {
 .art1 .container .items .wbtn {
 
   position: absolute;
-  left: 22px;
+  left: 35px;
   bottom: 50px;
 }
 
@@ -464,7 +464,27 @@ margin-top: 100px;
 
 .art4 {
   text-align: center;
+  position: relative;
 }
+
+.art4 .tag, 
+.art5 .tag 
+{
+  font-size: 16px;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  text-align: right;
+}
+
+.art4 .tag a,
+.art5 .tag a 
+{
+  color: #343434;
+  text-decoration: none;
+  border-bottom: 1px solid #195B31;
+}
+
 
 .art4_line {
   margin-top: 100px;
@@ -607,9 +627,11 @@ margin-top: 100px;
 
 /* art5 시작 */
 
-.art5 {}
-
+.art5 {
+  margin-top: 100px;
 }
+
+
 
 .art5 .title {
   margin-top: 100px;

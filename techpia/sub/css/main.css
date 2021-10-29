@@ -32,19 +32,29 @@
 .popup {
   /* border: 3px solid #195B31; */
   box-shadow: 0px 0px 20px rgb(194, 194, 194);  
-  background: rgb(255, 255, 255);
+  background: rgb(219, 88, 88);
   padding: 50px;
   top: 5%;
   position: fixed;
+  z-index: 3;
   width: 1200px;
   height: 805px;
   display: none;
   z-index: 5;
   border-radius: 10px;
-  background: url(../images/magazine_bg.png);
+  /* background: url(../images/magazine_bg.png); */
   box-sizing: border-box;
-
+  
 }
+
+
+
+.popup.modal1,
+.popup.modal2,
+.popup.modal3 {
+  background: url(../images/magazine_bg.png);
+}
+
 
 .popup .content {
   position: absolute;
@@ -97,6 +107,7 @@
 .popup.modal6
 {
 background: url(../images/magazine_bg2.png);
+
 }
 
 
@@ -171,8 +182,8 @@ background: url(../images/magazine_bg2.png);
 
 .title {
   font-family: 'S-CoreDream-6Bold';
-  font-size: 25px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  margin-bottom: 40px;
   padding-top: 50px;
   margin-left: 20px;
 }
@@ -261,8 +272,8 @@ nav .magazine {
 
 .art1 .megazine {
   position: absolute;
-  bottom: -39px;
-  right: 402px;
+  bottom: -120px;
+  right: 250px;
 }
 
 
@@ -301,9 +312,9 @@ nav .magazine {
 }
 
 .art2 .container .right ul li:nth-child(2) {
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'S-CoreDream-6Bold';
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   line-height: 70px;
 }
 
@@ -418,26 +429,37 @@ nav .magazine {
   margin-right: 30px;
 }
 
-.art3 .container .box .right {
-  margin-top: 75px;
-  margin-left: 10px;
+.art3 .container .box .right1 {
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+.art3 .container .box .right2 {
+  margin-top: 100px;
+  margin-left: -20px;
 }
 
 
-.art3 .container .right ul li:nth-child(1) {
+.art3 .container .right1 ul li:nth-child(1) ,
+.art3 .container .right2 ul li:nth-child(1) 
+{
   font-size: 14px;
   color: #195B31;
   margin-bottom: 10px;
 }
 
-.art3 .container .right ul li:nth-child(2) {
+.art3 .container .right1 ul li:nth-child(2) ,
+.art3 .container .right2 ul li:nth-child(2) 
+{
   font-size: 27px;
   font-family: 'S-CoreDream-6Bold';
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 40px;
 }
 
-.art3 .container .right ul li:nth-child(3) {
+.art3 .container .right1 ul li:nth-child(3) ,
+.art3 .container .right2 ul li:nth-child(3) 
+{
   font-size: 14px;
   color: #707070;
   margin-bottom: 20px;
@@ -458,20 +480,22 @@ nav .magazine {
 
 .art4 {
   margin-bottom: 100px;
+  cursor: url(../images/cursor.png) auto;
 }
 
-.art4 .container1 {
+.art4 .container1 ,
+.art4 .container2 
+{
   display: flex;
   justify-content: space-between;
   margin-left: 10px;
   margin-right: 10px;
+
 }
 
-.art4 .container2 {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 10px;
+.art4 .container1 .box a img:hover,
+.art4 .container2 .box a img:hover{
+  cursor: url(../images/cursor.png) ,auto;
 
 }
 

@@ -145,7 +145,7 @@ nav ul li:nth-child(3):hover:after {
 .title {
   position: relative;
   height: 150px;
-  background-color: #F6F6F6;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,6 +222,8 @@ nav ul li:nth-child(3):hover:after {
 
 .tab li:hover {
   background-color: #00D7D3;
+  transition: .25s;
+
 }
 
 
@@ -372,6 +374,7 @@ ul.tab>li.current a {
 .art1_box .right .btn_g .btn:hover {
   background-color: #00D7D3;
   border: 1px solid #00D7D3;
+  
 }
 
 .art1_box .right .btn_g a {
