@@ -80,7 +80,7 @@ ul.bxslider {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  transform: translateX(940px);
+  transform: translateX(930px);
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -178,7 +178,7 @@ ul.bxslider {
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
   text-align: left;
-  width: 80%;
+  width: 50%;
 }
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {

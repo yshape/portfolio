@@ -8,21 +8,56 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/jquery.bxslider.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="./js/youtube.js"></script>
   <script src="./js/main.js"></script>
   <script defer src="./js/topbtn.js"> </script>
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 
   <title>더 착한커피</title>
 </head>
 
 <body>
 
-<!-- 탑메뉴 버튼 -->
+  <!-- 탑메뉴 버튼 -->
 
   <div id="top"> <img src="./images/up_icon.png" alt=""> </div>
- 
+
 
 
   <!-- 헤더 시작 -->
@@ -78,7 +113,105 @@
         <span class="title">&nbsp;BEST SELLER</span>
       </span>
     </div>
-    <div class="container">
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="art1_box1">
+
+            <img src="./images/art1_box1_image.png" alt="">
+            <ul>
+              <li>리얼 마늘 바게트 볼</li>
+              <li>(Real garlic baguette bowl)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box2">
+
+            <img src="./images/art1_box2_image.png" alt="">
+            <ul>
+              <li>젤라또 찰떡 프라페노R</li>
+              <li>(glutinous rice cake Frappeno)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+
+            <img src="./images/art1_box3_image.png" alt="">
+            <ul>
+              <li>바베큐 치킨 깜빠뉴</li>
+              <li>(Barbecue chicken Campagne)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+            <img src="./images/art1_box4_image.png" alt="">
+            <ul>
+              <li>카라멜 시나몬 크로플바</li>
+              <li>(Caramel Cinnamon Croffle Bar)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+
+            <img src="./images/art1_box5_image.png" alt="">
+            <ul>
+              <li>모짜렐라 크로크무슈</li>
+              <li>(Mozzarella Croque Mushu)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+
+            <img src="./images/art1_box6_image.png" alt="">
+            <ul>
+              <li>카라멜 시나몬 크로플바</li>
+              <li>(Caramel Cinnamon Croffle Bar)</li>
+              <li>바닐라 크림 빙수</li>
+              <li>(Vanilla cream shaved ice)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+    <!-- <div class="container">
 
       <div class="art1_box1">
 
@@ -109,7 +242,7 @@
         </ul>
 
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- art1 끝 -->

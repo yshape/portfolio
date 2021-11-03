@@ -30,6 +30,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'IM_Hyemin-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IM_Hyemin-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* 공통 부분 시작 */
 
@@ -65,12 +78,13 @@
 }
 
 .title {
-  font-family: 'S-CoreDream-4Regular';
-  font-size: 40px;
+  font-family: 'IM_Hyemin-Regular';
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .title_p {
-  font-family: 'S-CoreDream-7ExtraBold';
+  font-family: 'IM_Hyemin-Bold';
   font-size: 45px;
 }
 
@@ -231,6 +245,7 @@ aside .content:hover .item.back {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  margin-top: 50px;
 
 
 }
@@ -255,6 +270,7 @@ aside .content:hover .item.back {
   margin-top: 13px;
 }
 
+
 /* art1 끝 */
 
 
@@ -264,6 +280,7 @@ aside .content:hover .item.back {
 .art2 {
   position: relative;
   margin-bottom: -2px;
+  margin-top: 50px;
 }
 
 
@@ -415,7 +432,6 @@ section .obj3>img {
   height: 1210px;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
   margin-bottom: 100px;
 }
 
